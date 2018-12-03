@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import test from './components/test';
 import Admin from './components/Admin';
 import AuthorizedRoute from './components/AuthorizedRoute';
-import Footer from './components/Footer';
 
 ReactDOM.render(
     <Router>
