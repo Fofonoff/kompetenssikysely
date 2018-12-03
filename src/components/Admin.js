@@ -55,7 +55,7 @@ newProfToDB = async(event) => {
     }
     //console.log("Kohti kantaa ja sen yli..." + jsondata);
    await topicService.newTopic(jsondata, topicnmbr)
-   this.setState({topics: await topicService.getAll(), message: "profession " + jsondata.text +" added"});
+   this.setState({topics: await topicService.getAll(), message: "profession " + jsondata.text +" saved"});
       //console.log(JSON.stringify(this.state.topics));
       setTimeout(() => {
           this.setState({ message: null })
@@ -232,7 +232,7 @@ newQuestiontoDB = async (event) => {
     console.log("Päivittyvä kyssäri: "+topicnmb + quesnmb)
     await axios.patch(url + '/topics/' + topicnmb + '/ST01/' + quesnmb + '/.json', tobeUpdated);
     const topics = await topicService.getAll()
-    this.setState({ topics, questions: [], message: "question " + tobeUpdated.text + " added ", option1: '', option3: '', option5: '', text: ''});
+    this.setState({ topics, questions: [], message: "question " + tobeUpdated.text + " saved ", option1: '', option3: '', option5: '', text: ''});
     setTimeout(() => {
         this.setState({ message: null })
 }, 5000)
@@ -255,7 +255,7 @@ click = (event) => {
                     <label>Kompetenssi: </label>
                     <input type="text" id="ammattiRyhma" value={this.state.newProf} onChange={this.uusAmmatti}></input>
 
-                <input type="submit" onClick={this.newProfToDB} value="Lähetä"/>
+                <input type="submit" onClick={this.newProfToDB} value="Lähetä Kompetenssi"/>
                 </form>
                 {!this.state.message ? null : <div className="Notification">
                   <Notification message={this.state.message}/>
@@ -268,7 +268,7 @@ click = (event) => {
                    editQuestions={this.editQuestions} deleteQuestion={this.deleteQuestion} selectedProf={this.state.selectedProf}/>
                </table>
                <form className="adminForm">
-                   <h3>Lisää uusi kysymys valittuun kompetenssiin tästä</h3>
+                   <h3>Lisää uusi kysymys {this.state.selectedProf} kompetenssiin tästä</h3>
                    <label>Kysymys: </label> <input type="text" name="text" onChange={this.inputChanged} value={this.state.text} placeholder="Tähän siis kyssäri"></input> <br></br>
                    <label>Vastausvaihtoehto 1: </label>
                    <input type="text" name="option1" onChange={this.inputChanged} value={this.state.option1} placeholder="Tähän vaihtoehto 1."></input><br></br>
