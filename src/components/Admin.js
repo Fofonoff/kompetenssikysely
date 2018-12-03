@@ -26,7 +26,6 @@ class Admin extends Component {
 
 async componentDidMount() {
     this.setState({topics : await topicService.getAll()});
-
 }
 
 uusAmmatti = (event) => {
@@ -49,12 +48,12 @@ newProfToDB = async(event) => {
         return;
     }
     //console.log("Kohti kantaa ja sen yli..." + jsondata);
-   await topicService.newTopic(jsondata, topicnmbr)
-   this.setState({topics: await topicService.getAll(), message: "profession " + jsondata.text +" saved"});
+    await topicService.newTopic(jsondata, topicnmbr)
+    this.setState({topics: await topicService.getAll(), message: "profession " + jsondata.text +" saved"});
       //console.log(JSON.stringify(this.state.topics));
-      setTimeout(() => {
-          this.setState({ message: null })
-}, 5000)
+        setTimeout(() => {
+            this.setState({ message: null })
+    }, 5000)
 }
 
 deleteProf = async (event) => {
@@ -65,26 +64,26 @@ deleteProf = async (event) => {
     this.setState({topics: await topicService.getAll(), message: "profession " + index +" deleted", selectedProf: ''});
     setTimeout(() => {
         this.setState({ message: null })
-}, 5000)
+    }, 5000)
 }
 
 editQuestions = async (event) => {
     this.setState({text: event.target.dataset.topic});
     let vaihtoehto = event.target.dataset.options.split(":");
-    let subsubtopic = Number(event.target.dataset.iteration) + 1;
+    let subsubtopic = parseInt(event.target.dataset.iteration, 10) + 1;
     if (subsubtopic < 10) {
-        await this.setState({quesnmb: "SST0" + Number(subsubtopic) });
+        await this.setState({quesnmb: "SST0" + parseInt(subsubtopic, 10) });
     }
     else {
-        await this.setState({quesnmb: "SST" + Number(subsubtopic) });
+        await this.setState({quesnmb: "SST" + parseInt(subsubtopic, 10) });
     }
-    if (Number(vaihtoehto[1]) === 0){
+    if (parseInt(vaihtoehto[1], 10) === 0){
         this.setState({option1 : vaihtoehto[0]})
     }
-    if (Number(vaihtoehto[3]) === 1){
+    if (parseInt(vaihtoehto[3], 10) === 1){
         this.setState({option3 : vaihtoehto[2].substring(1)})
     }
-    if (Number(vaihtoehto[5]) === 2){
+    if (parseInt(vaihtoehto[5], 10) === 2){
         this.setState({option5 : vaihtoehto[4].substring(1)})
     }
 
@@ -94,25 +93,25 @@ editQuestions = async (event) => {
 
 changeValue = (event) => {
     //console.log(event.target.dataset.bame);
-    let vaihtoehto = event.target.dataset.options.split(":");
-    let splitText = event.target.dataset.bame.split(":")
-    let subsubtopic = Number(event.target.dataset.iteration) + 1;
+    var vaihtoehto = event.target.dataset.options.split(":");
+    var splitText = event.target.dataset.bame.split(":")
+    var subsubtopic = parseInt(event.target.dataset.iteration, 10) + 1;
     if (subsubtopic < 10) {
-        this.setState({quesnmb: "SST0" + Number(subsubtopic) });
+        this.setState({quesnmb: "SST0" + parseInt(subsubtopic, 10) });
     }
     else {
-        this.setState({quesnmb: "SST" + Number(subsubtopic) });
+        this.setState({quesnmb: "SST" + parseInt(subsubtopic, 10) });
     }
 
     //console.log("Question number is: "+ this.state.quesnmb)
     this.setState({text: splitText[0]})
-    if (Number(vaihtoehto[1]) === 0){
+    if (parseInt(vaihtoehto[1], 10) === 0){
     this.setState({option1 : vaihtoehto[0]})
     }
-    if (Number(vaihtoehto[1]) === 1){
+    if (parseInt(vaihtoehto[1], 10) === 1){
         this.setState({option3 : vaihtoehto[0]})
     }
-    if (Number(vaihtoehto[1]) === 2){
+    if (parseInt(vaihtoehto[1], 10) === 2){
         this.setState({option5 : vaihtoehto[0]})
     }
 }
@@ -126,8 +125,8 @@ showQuestions = async (event) => {
     let profArray = this.state.topics.filter(t => t.text === index);
     let questions = Object.values(profArray[0].ST01).map(option => option).filter(o => typeof o === 'object')
     await fire.database().ref('/topics/').orderByChild('text').equalTo(index).once('value', function(snapshot) {
-         key =  Object.keys(snapshot.val()); //haetaan key firestä
-         return key;
+        key =  Object.keys(snapshot.val()); //haetaan key firestä
+        return key;
 
      })
 
@@ -139,8 +138,8 @@ showQuestions = async (event) => {
         else if (questions.length > 0 || questions.length < 10) {
 
             await fire.database().ref('/topics/' + this.state.topicnmb + '/ST01/').orderByChild('text').once('value', function(snapshot) {
-                    quesKey = Object.keys(snapshot.val()); //haetaan key firestä
-                    return quesKey;
+                quesKey = Object.keys(snapshot.val()); //haetaan key firestä
+                return quesKey;
             })
             let i = ''
             if (quesKey.length === 2) {
@@ -178,6 +177,7 @@ inputChanged = (event) => {
 
 
 deleteQuestion = async (event) => {
+    const url = fire.options.databaseURL;
     let quesKey = "";
     let subsubtopicIteration = event.target.dataset.iteration.split(":");
 
@@ -187,15 +187,16 @@ deleteQuestion = async (event) => {
     })
     this.setState({quesnmb : quesKey});
 
-    await axios.delete('https://surveydev-740fb.firebaseio.com/topics/'+this.state.topicnmb+'/ST01/'+this.state.quesnmb+'/.json');
-    this.setState({topics: await topicService.getAll(), message: "question " + this.state.topicnmb + " deleted", questions: [], selectedProf: ''});
+    await axios.delete(url + '/topics/' + this.state.topicnmb+ '/ST01/' +this.state.quesnmb + '/.json');
+    this.setState({topics: await topicService.getAll(), message: "question " + this.state.topicnmb + " deleted", questions: []});
     setTimeout(() => {
         this.setState({ message: null })
-}, 5000)
+    }, 5000)
 };
 
 
 newQuestiontoDB = async (event) => {
+    const url = fire.options.databaseURL
     event.preventDefault();
     let topicnmb = this.state.topicnmb;
     let quesnmb = this.state.quesnmb;
@@ -214,14 +215,13 @@ newQuestiontoDB = async (event) => {
         text : text,
         type : "radio"
     }
-    await axios.patch('https://surveydev-740fb.firebaseio.com/topics/'+topicnmb+'/ST01/'+quesnmb+'/.json', tobeUpdated);
+    await axios.patch(url + '/topics/' + topicnmb + '/ST01/' + quesnmb + '/.json', tobeUpdated);
     const topics = await topicService.getAll()
-    this.setState({ topics, questions: [], message: "question " + tobeUpdated.text + " saved ", option1: '', option3: '', option5: '', text: '', selectedProf: ''});
+    this.setState({ topics, questions: [], message: "question " + tobeUpdated.text + " saved ", option1: '', option3: '', option5: '', text: ''});
     setTimeout(() => {
         this.setState({ message: null })
-}, 5000)
+    }, 5000)
 }
-
 
     render() {
       const topicsToShow = this.state.topics.filter(t => typeof t === 'object')
@@ -235,7 +235,7 @@ newQuestiontoDB = async (event) => {
                     <label>Kompetenssi: </label>
                     <input type="text" id="ammattiRyhma" value={this.state.newProf} onChange={this.uusAmmatti}></input>
 
-                <input type="submit" onClick={this.newProfToDB} value="Lähetä"/>
+                <input type="submit" onClick={this.newProfToDB} value="Lähetä Kompetenssi"/>
                 </form>
                 {!this.state.message ? null : <div className="Notification">
                   <Notification message={this.state.message}/>
@@ -248,7 +248,7 @@ newQuestiontoDB = async (event) => {
                    editQuestions={this.editQuestions} deleteQuestion={this.deleteQuestion} selectedProf={this.state.selectedProf}/>
                </table>
                <form className="adminForm">
-                   <h3>Lisää uusi kysymys valittuun kompetenssiin tästä</h3>
+                   <h3>Lisää uusi kysymys {this.state.selectedProf} kompetenssiin tästä</h3>
                    <label>Kysymys: </label> <input type="text" name="text" onChange={this.inputChanged} value={this.state.text} placeholder="Tähän siis kyssäri"></input> <br></br>
                    <label>Vastausvaihtoehto 1: </label>
                    <input type="text" name="option1" onChange={this.inputChanged} value={this.state.option1} placeholder="Tähän vaihtoehto 1."></input><br></br>

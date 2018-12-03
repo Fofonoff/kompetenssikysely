@@ -7,7 +7,8 @@ const AdminList = ({ topics, deleteProf, showQuestions, questions, deleteQuestio
 
  if (topics.topic === questions.text ) {
    return (
-     <tbody>
+     <tbody> {selectedProf !== '' ?
+     <tr><td>Valittu kompetenssi: {selectedProf}</td></tr> : <tr><td>Ei valittua kompetenssia!</td></tr>}
      {topics.filter(t => t.text !== 'yleinen').map((topic, i) => (
      <tr key={i} >
      <td>{topic.text}</td>
