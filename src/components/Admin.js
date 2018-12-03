@@ -27,8 +27,7 @@ class Admin extends Component {
 async componentDidMount() {
     this.setState({topics : await topicService.getAll()});
     //console.log(topics);
-    //console.log(JSON.stringify(this.state.topics));
-
+    //console.log(JSON.stringify(this.state.topics)); 
 }
 uusAmmatti = (event) => {
     this.setState({newProf : event.target.value})
@@ -179,6 +178,7 @@ inputChanged = (event) => {
 
 
 deleteQuestion = async (event) => {
+    const url = fire.options.databaseURL;
     var quesKey = "";
     var subsubtopicIteration = event.target.dataset.iteration.split(":");
     
@@ -190,12 +190,13 @@ deleteQuestion = async (event) => {
     this.setState({quesnmb : quesKey});
     
     console.log("Lähtee topicnumerolla: " + this.state.topicnmb + " ja SST: " + this.state.quesnmb);
-    axios.delete('https://surveydev-740fb.firebaseio.com/topics/'+this.state.topicnmb+'/ST01/'+this.state.quesnmb+'/.json');
+    axios.delete(url + '/topics/' + this.state.topicnmb+ '/ST01/' +this.state.quesnmb + '/.json');
     //this.setState({topics: await topicService.getAll()});
 };
 
 
 newQuestiontoDB = async (event) => {
+    const url = fire.options.databaseURL
     event.preventDefault();
     var topicnmb = this.state.topicnmb;
     var quesnmb = this.state.quesnmb;
@@ -215,7 +216,7 @@ newQuestiontoDB = async (event) => {
         type : "radio"
     }
     console.log("Päivittyvä kyssäri: "+topicnmb + quesnmb)
-    axios.patch('https://surveydev-740fb.firebaseio.com/topics/'+topicnmb+'/ST01/'+quesnmb+'/.json', tobeUpdated);
+    axios.patch(url + '/topics/' + topicnmb + '/ST01/' + quesnmb + '/.json', tobeUpdated);
     this.setState({topics: await topicService.getAll()});
 }
 
