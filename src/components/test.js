@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import firebaseui from 'firebaseui';
-import Admin from './Admin';
 
 class test extends Component {
 
     componentDidMount() {
-        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        let ui = new firebaseui.auth.AuthUI(firebase.auth());
         /*
         ui.start('#firebaseui-auth-container', {
             signInOptions: [
@@ -15,7 +14,7 @@ class test extends Component {
             // Other config options...
           });*/
 
-        var uiConfig = {
+        let uiConfig = {
             callbacks: {
               signInSuccessWithAuthResult: function(authResult, redirectUrl) {
                 // User successfully signed in.

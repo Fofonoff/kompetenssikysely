@@ -10,16 +10,15 @@ import prog8 from '../img/prog8.svg'
 //vaiha img/bar --> img/prog
 
 const ProgressBar2 = ({src}) => {
-var src2 = src + 1;
-var imglist = [prog1, prog2, prog3, prog4, prog5, prog6, prog7, prog8];
-var progress;
+let src2 = src + 1;
+let imglist = [prog1, prog2, prog3, prog4, prog5, prog6, prog7, prog8];
+let progress;
 imglist.forEach(element => {
   if ("prog" + src2 === element){
     progress = element
     return progress;
   }
 });
-console.log(progress)
 
           return (
             <div className="bar">

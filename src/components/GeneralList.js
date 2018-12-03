@@ -3,9 +3,6 @@ import GeneralTopic from './GeneralTopic'
 
 const GeneralList = ({ topics, move, changeOption, answers, getChecked }) => {
 
-
-
-
 	return (
 		<div className="App">
 			<div className="surveyContainer">
