@@ -7,12 +7,14 @@ class BarChart extends Component {
         super(props);
         this.state = {
             canvases: [],
+            rows: [],
         };
     }
 
     async componentDidMount() {
         let chartConfig = [];
         let canvases = [];
+        let feedBackAnswers = [];
         let answers = this.props.answers;
         let profAverages = this.props.profAverages;
         let selectedTopics = this.props.selectedTopics;
@@ -110,34 +112,63 @@ class BarChart extends Component {
 
             // Luodaan uusi BarChart
             let chartName = "myChart" + y;
-            console.log(chartName);
             chartConfig.push([chartName, data, options]);
             canvases = [...canvases, chartName];
+            let professionFeedBack = onlyProfessionAnswers.filter((answer) => answer.topic === topic.topic);
+            feedBackAnswers.push(professionFeedBack);
         }) // End of forEach loop for multi-charts
 
+        var sortedFeedBackAnswers = [];
+        feedBackAnswers.forEach(function(topic) {
+            var sortedTopic = topic.map((a) => a).sort((a, b) => a.value - b.value).reverse();
+            sortedFeedBackAnswers = [...sortedFeedBackAnswers, sortedTopic];
+        })
+        var rows = [];
+        sortedFeedBackAnswers.forEach(array => {
+            var row = array.filter(item => item.value === '1' || item.value === '5');
+            rows.push(row);
+        });
+            
+        await this.setState({ rows: rows });
         await this.setState({ canvases: canvases });
-        console.log("canvases:" + this.state.canvases);
-        console.log(chartConfig[0]);
         canvases.forEach(function (canvas, index) {
             const myChart = new Chart(canvas, { type: "horizontalBar", data: chartConfig[index][1], options: chartConfig[index][2] });
         })
     }
 
     render() {
-        let sortedAnswers = this.props.answers.map((a) => a).sort((a, b) => a.value - b.value).reverse();
+       /* let sortedAnswers = this.props.answers.map((a) => a).sort((a, b) => a.value - b.value).reverse();
         let rows = sortedAnswers.map((item, index) => item.category === "ammatti" && (item.value === "1" || item.value === "5") ?
             <p key={index}><b>{item.answer}:</b> {item.value} {item.text}</p>
             : null
-        )
+        )*/
+        var feedBackRows = [];
+        var row = [];
+        this.state.rows.forEach(nested => {
+            console.log('nested' + nested)
+            console.log(typeof nested);
+            Object.values(nested).forEach((item, index) => {
+                row = [...row, item];
+            })
+            feedBackRows.push(row);
+            console.log(feedBackRows);
+        })
 
         return (
             <div className="surveyContainer">
                 <div className="barChartContainer">
                     {this.state.canvases.map((canvas) =>
-                        <canvas className="barCanvas" id={canvas} key={canvas}></canvas>)}<p></p>
+                        <canvas className="barCanvas" id={canvas} key={canvas}></canvas>)}
                 </div>
                 <div className="palaute">
-                    <div className="reviewtext">{rows}</div>
+                    {this.state.rows.map(array => (
+                        Object.values(array).map((element, index) => (
+                            <div key={index}><b>{element.answer}/{element.topic}:</b><p>{element.value} {element.text}</p></div>
+                        ))
+                    ))}
+                    { /*<div key={index}><h3>{element.topic}</h3><b>{element.answer}:</b><p>{element.value}{element.text}</p></div>*/}
+                    {/*feedBackRows*/}
+                    {/*<div className="reviewtext">{rows}</div>*/}
                 </div>
                 {this.props.surveyState !== 6
                     ? <div>
