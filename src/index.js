@@ -16,6 +16,6 @@ ReactDOM.render(
         <Route path="/" component={App}></Route>
         </Switch>
     </Router>
-    
+
 , document.getElementById('root'));
 registerServiceWorker();

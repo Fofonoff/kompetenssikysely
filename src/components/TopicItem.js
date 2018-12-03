@@ -6,7 +6,6 @@ const TopicItem = ({ topic, changeOption, parent, get }) => {
   const optionValues = Object.values(topic).map(option => option).filter(o => typeof o === 'object')
   const questionName = topic.text + "*" + parent
   //validointi hoidettu tuolla "required", eli nyt näyttää puutuvat punaisella ja vie käyttäjän ensimmäisen uupuvan kohdalle...
-  console.log(optionValues);
   return (
     <div className="topicItemContainer">
       <p className="topicItemHeader">{topic.text}</p>

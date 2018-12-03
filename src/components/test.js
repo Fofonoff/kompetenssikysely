@@ -5,7 +5,7 @@ import firebaseui from 'firebaseui';
 class test extends Component {
 
     componentDidMount() {
-        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        let ui = new firebaseui.auth.AuthUI(firebase.auth());
         /*
         ui.start('#firebaseui-auth-container', {
             signInOptions: [
@@ -14,7 +14,7 @@ class test extends Component {
             // Other config options...
           });*/
 
-        var uiConfig = {
+        let uiConfig = {
             callbacks: {
               signInSuccessWithAuthResult: function(authResult, redirectUrl) {
                 // User successfully signed in.

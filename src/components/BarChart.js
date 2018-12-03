@@ -17,25 +17,23 @@ class BarChart extends Component {
         let profAverages = this.props.profAverages;
         let selectedTopics = this.props.selectedTopics;
         selectedTopics.forEach(function (topic, y) {
-            var onlyProfessionAnswers = answers.filter((answer) => answer.topic === topic.topic)
-            var myDataWithAnswers = onlyProfessionAnswers.map((a) => a).sort((a, b) => a.value - b.value).reverse();
-            var myData = myDataWithAnswers.map((a) => a.value);
-            var answerKeys = myDataWithAnswers.map((a) => a.answer);
-            var items = [];
-            var answerItems = profAverages.answers;
-            var valueItems = profAverages.values;
-            console.log("val+answ" + valueItems[0] + answerItems[0]);
-            for (var i = 0; i < answerItems.length; i++) {
+            let onlyProfessionAnswers = answers.filter((answer) => answer.topic === topic.topic)
+            let myDataWithAnswers = onlyProfessionAnswers.map((a) => a).sort((a, b) => a.value - b.value).reverse();
+            let myData = myDataWithAnswers.map((a) => a.value);
+            let answerKeys = myDataWithAnswers.map((a) => a.answer);
+            let items = [];
+            let answerItems = profAverages.answers;
+            let valueItems = profAverages.values;
+            for (let i = 0; i < answerItems.length; i++) {
                 items[i] = [answerItems[i], [valueItems[i]]];
             }
 
-            var result = [];
+            let result = [];
             answerKeys.forEach(function (key) {
-                var found = false;
+                let found = false;
                 items = items.filter(function (item) {
                     if (!found && item[0] === key) {
                         found = true;
-                        console.log("222" + item);
                         result.push(item);
                         return false;
                     } else {
@@ -43,12 +41,10 @@ class BarChart extends Component {
                     }
                 })
             })
-            var resultMultiD = result.map((a) => a[1]);
-            var avgData = resultMultiD.flat();
-            console.log("my" + myData);
-            console.log("avg" + avgData);
+            let resultMultiD = result.map((a) => a[1]);
+            let avgData = resultMultiD.flat();
 
-            var data = {
+            let data = {
                 labels: answerKeys, //tähän kyssärit db:stä
                 datasets: [{
                     "label": "Omat kompetenssini",
@@ -67,7 +63,7 @@ class BarChart extends Component {
                 }]
             }
             // Chartin asetukset
-            var options = {
+            let options = {
                 title: {
                     display: true,
                     text: topic.topic,
@@ -110,14 +106,11 @@ class BarChart extends Component {
 
             // Luodaan uusi BarChart
             let chartName = "myChart" + y;
-            console.log(chartName);
             chartConfig.push([chartName, data, options]);
             canvases = [...canvases, chartName];
         }) // End of forEach loop for multi-charts
 
         await this.setState({ canvases: canvases });
-        console.log("canvases:" + this.state.canvases);
-        console.log(chartConfig[0]);
         canvases.forEach(function (canvas, index) {
             const myChart = new Chart(canvas, { type: "horizontalBar", data: chartConfig[index][1], options: chartConfig[index][2] });
         })

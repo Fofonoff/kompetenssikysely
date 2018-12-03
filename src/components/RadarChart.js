@@ -12,12 +12,12 @@ class RadarChart extends Component {
   }
 
   componentDidMount() {
-    var filteredAnswers = this.props.answers.filter((answer) => answer.topic !== "Yleisettiedot");
+    let filteredAnswers = this.props.answers.filter((answer) => answer.topic !== "Yleisettiedot");
     this.props.selectedTopics.forEach(function (element) {
       filteredAnswers.filter((answer) => answer.topic !== element.topic);
     })
 
-    var genTopics = this.props.getGenTopics();
+    let genTopics = this.props.getGenTopics();
     filteredAnswers.forEach(element => {
       genTopics.forEach(topic => {
         if (element.topic === topic) {
@@ -25,10 +25,10 @@ class RadarChart extends Component {
       })
     })
 
-    var answerArray = [];
-    var labelArray = [];
+    let answerArray = [];
+    let labelArray = [];
     genTopics.forEach(topic => {
-      var topicArray = [];
+      let topicArray = [];
       filteredAnswers.forEach(element => {
         if (element.topic === topic) {
           topicArray.push(element);
@@ -37,28 +37,28 @@ class RadarChart extends Component {
       answerArray.push(topicArray);
       labelArray.push(topic);
     })
-    var high = [];
-    var low = [];
+    let high = [];
+    let low = [];
 
     filteredAnswers.forEach(element => {
-      if (element.value == 5) {
+      if (Number(element.value) === 5) {
         high.push(element);
       }
-      else if (element.value == 1) {
+      else if (Number(element.value) === 1) {
         low.push(element);
       }
     })
 
-    var averageArray = [];
+    let averageArray = [];
     answerArray.forEach(element => {
-      var answerValues = element.map((a) => parseInt(a.value));
-      var sum = answerValues.reduce((previous, current) => current + previous);
-      var avg = (sum / answerValues.length).toFixed(2);
+      let answerValues = element.map((a) => Number(a.value));
+      let sum = answerValues.reduce((previous, current) => current + previous);
+      let avg = (sum / answerValues.length).toFixed(2);
       averageArray.push(avg);
     })
 
-    var ctx = document.getElementById("radarChart");
-    var radarChart = new Chart(ctx, {
+    let ctx = document.getElementById("radarChart");
+    let radarChart = new Chart(ctx, {
       type: 'radar',
       data: {
         labels: labelArray,
@@ -88,22 +88,22 @@ class RadarChart extends Component {
       }
     });
 
-    var i = 0;
-    var rows1 = [];
-    var rows2 = [];
-
-    var helpertext = this.props.feedback[0]
+    let i = 0;
+    let rows1 = [];
+    let rows2 = [];
+    let helper = ''
+    let helpertext = this.props.feedback[0]
     //FIXME: Key should be unique!
-    var b = 0;
-    var x = 0;
+    let b = 0;
+    let x = 0;
     for (i = 0; i < high.length; i++) {
-      var helper = helpertext.High.filter((a) => a.name == high[i].answer)
+      let helper = helpertext.High.filter((a) => a.name === high[i].answer)
       for (b = 0; b < helper.length; b++) {
         rows1.push(<p key={b}><span className="bold">{helper[b].name}: </span>{helper[b].text}</p>)
       }
     }
     for (i = 0; i < low.length; i++) {
-      var helper = helpertext.Low.filter((a) => a.name == low[i].answer)
+       helper = helpertext.Low.filter((a) => a.name === low[i].answer)
       for (x = 0; x < helper.length; x++) {
         rows2.push(<p key={x}><span className="bold">{helper[x].name} </span></p>)
       }
