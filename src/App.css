@@ -160,6 +160,14 @@
     color: #ffffff;
     text-align: left;
   }
+
+  .Notification {
+    margin-left: 15em;
+    margin-right: 15em;
+    border-style:double;
+    border-width: 5px;
+    border-color: pink;
+}
   /*Kategorian alaotsikko ja vastausvaihtoehdot*/
   .topicItemContainer {
     margin-top: 17px;
@@ -274,10 +282,14 @@
   }
   .bar img {
     max-height: 150px;
+    width: 90%;
   }
   .header-logo {
     margin: 10px 0 0 33px;
     display: flex;
+    max-height: 53px;
+    max-width: 160px;
+    width: 20%;
   }
   h1 {
     color: #E6007E;
@@ -294,9 +306,9 @@
   }
   .welcomePageText {
     text-align: left;
-    margin-left: 50px;
+    margin-left: 10%;
     margin-bottom: 40px;
-    margin-right: 50px;
+    margin-right: 10%;
   }
   .improvText {
     text-align: left;
@@ -341,14 +353,6 @@
     width: 100%;
   }
 
-  .Notification {
-    margin-left: 15em;
-    margin-right: 15em;
-    border-style:double;
-    border-width: 5px;
-    border-color: pink;
-  }
-
   .footerImgDiv {
     display: flex;
     flex-direction: row;
@@ -363,8 +367,17 @@
     align-self: flex-end;
     width: 20%;
   }
-  .footer-img {
-    height:48px;
+  .footer-img-hh {
+    max-height:48px;
+    width: 100%;
+    max-width: 155.45px;
+    min-width : 100px;
+  }
+  .footer-img-stn {
+    max-height:48px;
+    width: 100%;
+    max-width: 217.183px;
+    min-width: 100px;
   }
   .social-links {
     margin:auto;
@@ -376,17 +389,6 @@
   .adminList {
     display: block;
   }
-  .adminForm {
-    margin-left: 1%;
-    display: inline-block;
-  }
-  .adminForm label {
-    margin-left: 1%;
-    display: inline-block;
-    margin-right: 2%;
-    margin-bottom: 2%;
-  }
-
   .adminTable {
     display: inline-block;
     align-content: center;
@@ -441,6 +443,43 @@
     }
     .footer {
       display: none
+    }
+  }
+  @media only screen and (max-width: 685px){
+    h1 {
+      color: #E6007E;
+      font-size: 150%;
+      font-weight: bolder;
+    }
+    h3 {
+      color: #3C3C3C;
+      font-size: 100%;
+      font-weight:bold;
+    }
+    .social-links{
+      display: none;
+    }
+
+  }
+  @media only  screen and (max-width:320px){
+    h1 {
+      color: #E6007E;
+      font-size: 150%;
+      font-weight: bolder;
+    }
+    h3 {
+      color: #3C3C3C;
+      font-size: 100%;
+      font-weight:bold;
+    }
+    .social-links{
+      display: none;
+    }
+    #radarChart{
+      display: none;
+    }
+    .barCanvas{
+      display: none;
     }
 
   }

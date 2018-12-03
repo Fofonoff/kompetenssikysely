@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="footerImgDiv">
                     <div className="stnlogo">
                         <a href="http://www.aka.fi/stn" target="_blank" rel="noopener noreferrer">
-                            <img src={stn_logo} className="footer-img" alt="STN-Logo" /></a>
+                            <img src={stn_logo} className="footer-img-stn" alt="STN-Logo" /></a>
                     </div>
                     <div className="social-links">
                         <a href="https://www.facebook.com/HaagaHeliaAMK/?userLang=en" target="_blank" rel="noopener noreferrer">
@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
                     <div className="hhlogo">
                         <a href="http://www.haaga-helia.fi/en/frontpage" target="_blank" rel="noopener noreferrer">
-                            <img src={hh_logo} className="footer-img" alt="HH-Logo" /></a>
+                            <img src={hh_logo} className="footer-img-hh" alt="HH-Logo" /></a>
                     </div>
                 </div>
             </div>

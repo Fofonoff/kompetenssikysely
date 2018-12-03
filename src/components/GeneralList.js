@@ -1,11 +1,7 @@
 import React from 'react'
 import GeneralTopic from './GeneralTopic'
-import jatka from '../img/PNG/jatka.png'
 
 const GeneralList = ({ topics, move, changeOption, answers, getChecked }) => {
-
-
-
 
 	return (
 		<div className="App">

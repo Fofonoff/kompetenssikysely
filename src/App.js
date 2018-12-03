@@ -85,14 +85,13 @@ class App extends React.Component {
     }
 
     getChecked = (x, item, parent) => {
-        console.log(x, item, parent)
         let name = ''
         if (x.includes("*")) {
             name = x.split("*")
         }
         const result = name === '' ? x : name[0]
         const filterAnswers = this.state.answers.filter(a => a.answer === result && a.topic === parent)
-        const found = filterAnswers.filter(a => parseInt(a.value) === item)
+        const found = filterAnswers.filter(a => Number(a.value) === item)
         return found.length === 1
     }
 
@@ -115,7 +114,8 @@ class App extends React.Component {
         const selectedTopics = this.state.selectedTopics.map(topic => topic.topic)
         if (selectedTopics.includes(topicObject.topic)) {   // filteröidään pois topicit, jotka on jo valittu =>
             const updatedTopics = this.state.selectedTopics.filter(topic => topic.topic !== topicObject.topic) // kuń painetaan uudestaan - se lähtee pois statesta!!!
-            this.setState({ selectedTopics: updatedTopics })
+            const updatedAnswers = this.state.answers.filter(answer => answer.topic !== topicObject.topic)
+            this.setState({ selectedTopics: updatedTopics, answers: updatedAnswers })
         } else {  // muussa tapauksessa lisätään topic listaan
             this.setState({ selectedTopics: [...this.state.selectedTopics, topicObject] })
         }
@@ -142,8 +142,8 @@ class App extends React.Component {
             uniqueAnswers.forEach((element) => {
                 const tempArr = onlyAnswers.filter((answer) =>
                     element === answer.answer)
-                const valueArr = tempArr.map((a) => parseInt(a.value));
-                var avg = (valueArr.reduce((previous, current) => current + previous, 0) / valueArr.length).toFixed(2)
+                const valueArr = tempArr.map((a) => Number(a.value));
+                let avg = (valueArr.reduce((previous, current) => current + previous, 0) / valueArr.length).toFixed(2)
                 answerAverages.push(avg);
                 return answerAverages;
             });

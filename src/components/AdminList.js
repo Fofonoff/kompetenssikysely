@@ -8,7 +8,7 @@ const AdminList = ({ topics, deleteProf, showQuestions, questions, deleteQuestio
  if (topics.topic === questions.text ) {
    return (
      <tbody> {selectedProf !== '' ?
-     <tr><td>Valittu kompetenssi: {selectedProf}</td></tr> : <tr><td>Ei valittua kopmpetenssia!</td></tr>}
+     <tr><td>Valittu kompetenssi: {selectedProf}</td></tr> : <tr><td>Ei valittua kompetenssia!</td></tr>}
      {topics.filter(t => t.text !== 'yleinen').map((topic, i) => (
      <tr key={i} >
      <td>{topic.text}</td>
@@ -19,7 +19,7 @@ const AdminList = ({ topics, deleteProf, showQuestions, questions, deleteQuestio
      <td><button id={topic.text} onClick={showQuestions}>Edit</button></td>
      </tr>
      ))}
-
+     {selectedProf !== '' ? <tr><td>Kysymykset kompetenssiin <b>{selectedProf}</b> alla</td></tr> : null}
      {questions.map((a, i) =>
        <AdminTopicItem key={i} topic={a} iteration={i} saveChanges={saveChanges} changeValue={changeValue}
        editQuestions={editQuestions} deleteQuestion={deleteQuestion}/>
