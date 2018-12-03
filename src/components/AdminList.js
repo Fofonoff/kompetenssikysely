@@ -1,12 +1,14 @@
 import React from 'react';
 import AdminTopicItem from './AdminTopicItem'
 
-const AdminList = ({ topics, deleteProf, showQuestions, questions, deleteQuestion , saveChanges, changeValue, editQuestions }) => {
+const AdminList = ({ topics, deleteProf, showQuestions, questions, deleteQuestion , saveChanges, changeValue, editQuestions, selectedProf }) => {
+
 
 
  if (topics.topic === questions.text ) {
    return (
-     <tbody>
+     <tbody> {selectedProf !== '' ?
+     <tr><td>Valittu kompetenssi: {selectedProf}</td></tr> : <tr><td>Ei valittua kopmpetenssia!</td></tr>}
      {topics.filter(t => t.text !== 'yleinen').map((topic, i) => (
      <tr key={i} >
      <td>{topic.text}</td>

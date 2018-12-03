@@ -90,7 +90,7 @@
     text-align: left;
     margin-left: 50px;
     margin-bottom: 40px;
-    
+
   }
 
   /*ASIANTUNTIJAN OSAAMINEN -intron checkbox*/
@@ -341,6 +341,14 @@
     width: 100%;
   }
 
+  .Notification {
+    margin-left: 15em;
+    margin-right: 15em;
+    border-style:double;
+    border-width: 5px;
+    border-color: pink;
+  }
+
   .footerImgDiv {
     display: flex;
     flex-direction: row;
@@ -392,7 +400,7 @@
   }
   .adminTable tr:nth-child(even){background-color: #f2f2f2;}
   .adminTable tr:hover {background-color: #ddd;}
-  
+
   /*tulostus asettelut tähän*/
   @media print {
     a[href]:after {
@@ -412,7 +420,7 @@
       width: 50%;
       margin-right: 80%;
     }
-    
+
     .barCanvas {
       width: 50%;
     }
@@ -434,4 +442,5 @@
     .footer {
       display: none
     }
+
   }

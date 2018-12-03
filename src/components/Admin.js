@@ -6,6 +6,7 @@ import Topic from './Topic';
 import AdminList from './AdminList';
 import fire from '../fire';
 import { func } from 'prop-types';
+import Notification from './Notification'
 
 class Admin extends Component {
     constructor(props){
@@ -21,6 +22,8 @@ class Admin extends Component {
             text: "",
             quesnmb: "",
             topicnmb: "",
+            message: null,
+            selectedProf: ''
         }
     }
 
@@ -29,6 +32,7 @@ async componentDidMount() {
     //console.log(topics);
     //console.log(JSON.stringify(this.state.topics)); 
 }
+
 uusAmmatti = (event) => {
     this.setState({newProf : event.target.value})
 }
@@ -51,8 +55,11 @@ newProfToDB = async(event) => {
     }
     //console.log("Kohti kantaa ja sen yli..." + jsondata);
    await topicService.newTopic(jsondata, topicnmbr)
-   this.setState({topics: await topicService.getAll()});
+   this.setState({topics: await topicService.getAll(), message: "profession " + jsondata.text +" added"});
       //console.log(JSON.stringify(this.state.topics));
+      setTimeout(() => {
+          this.setState({ message: null })
+}, 5000)
 }
 
 deleteProf = async (event) => {
@@ -61,8 +68,12 @@ deleteProf = async (event) => {
     var topicnmbr = "T0"+index;
     var tobeDEL = JSON.stringify(delArray);
     await topicService.removeTopic(tobeDEL)
-    this.setState({topics: await topicService.getAll()});
+    this.setState({topics: await topicService.getAll(), message: "profession " + index +" deleted"});
+    setTimeout(() => {
+        this.setState({ message: null })
+}, 5000)
 }
+
 editQuestions = async (event) => {
     this.setState({text: event.target.dataset.topic});
     var vaihtoehto = event.target.dataset.options.split(":");
@@ -82,7 +93,7 @@ editQuestions = async (event) => {
     if (vaihtoehto[5] == 2){
         this.setState({option5 : vaihtoehto[4].substring(1)})
     }
-    
+
     //alkuperänen plääni tehä tällä kerralla kaikki toi mitä tapahtuu changeValuessa,
     //ei saanu datasettiä skulaa koska ylläri ku on inputissa kiinni ni ei oikee liiku enempää dataa esim kaikista kerral
 }
@@ -122,16 +133,16 @@ showQuestions = async (event) => {
          key =  Object.keys(snapshot.val()); //haetaan key firestä
          console.log(key);
          return key;
- 
+
      })
- 
+
      this.setState({topicnmb : key});
     if (questions.length === 0 ){
        var subtopicnumber = "SST01";
        this.setState({quesnmb : subtopicnumber});
     }//tää on iha infernaalinen ifelsetys... ei pysty sellittää
-        else if (questions.length > 0 || questions.length < 10) {   
-        
+        else if (questions.length > 0 || questions.length < 10) {
+
             await fire.database().ref('/topics/' + this.state.topicnmb + '/ST01/').orderByChild('text').once('value', function(snapshot) {
                 console.log("Question Keys: "+ JSON.stringify(snapshot.val()));
                     quesKey = Object.keys(snapshot.val()); //haetaan key firestä
@@ -145,7 +156,7 @@ showQuestions = async (event) => {
             }
             console.log(i)
             var splitSST = quesKey[i].split("T");
-            var indexNumber = parseInt(splitSST[1]) + 1; 
+            var indexNumber = parseInt(splitSST[1]) + 1;
             var subtopicnumber = "SST0" + indexNumber;
             this.setState({quesnmb : subtopicnumber});
             }
@@ -159,17 +170,17 @@ showQuestions = async (event) => {
                 var i = quesKey.length - 2;
                 console.log(i)
                 var splitSST = quesKey[i].split("T");
-                var indexNumber = parseInt(splitSST[1]) + 1; 
+                var indexNumber = parseInt(splitSST[1]) + 1;
                 var subtopicnumber = "SST" + indexNumber;
                 console.log("SST"+subtopicnumber)
                 this.setState({quesnmb : subtopicnumber});
             }
     if(this.state.questions.length > 0){
-        this.setState({ questions: []})
+        this.setState({ questions: [], selectedProf: ''})
     }       else {
-                this.setState({ questions })
+                this.setState({ questions, selectedProf: index })
     }
-    
+
 }
 
 inputChanged = (event) => {
@@ -181,17 +192,20 @@ deleteQuestion = async (event) => {
     const url = fire.options.databaseURL;
     var quesKey = "";
     var subsubtopicIteration = event.target.dataset.iteration.split(":");
-    
+
    await fire.database().ref('/topics/' + this.state.topicnmb + '/ST01/').orderByChild('text').equalTo(subsubtopicIteration[0]).once('value', function(snapshot) {
         console.log("Mitä löytyy: "+ JSON.stringify(snapshot.val()));
             quesKey = Object.keys(snapshot.val()); //haetaan key firestä
             return quesKey;
     })
     this.setState({quesnmb : quesKey});
-    
+
     console.log("Lähtee topicnumerolla: " + this.state.topicnmb + " ja SST: " + this.state.quesnmb);
-    axios.delete(url + '/topics/' + this.state.topicnmb+ '/ST01/' +this.state.quesnmb + '/.json');
-    //this.setState({topics: await topicService.getAll()});
+    await axios.delete(url + '/topics/' + this.state.topicnmb+ '/ST01/' +this.state.quesnmb + '/.json');
+    this.setState({topics: await topicService.getAll(), message: "question " + this.state.topicnmb + " deleted", questions: []});
+    setTimeout(() => {
+        this.setState({ message: null })
+}, 5000)
 };
 
 
@@ -216,8 +230,12 @@ newQuestiontoDB = async (event) => {
         type : "radio"
     }
     console.log("Päivittyvä kyssäri: "+topicnmb + quesnmb)
-    axios.patch(url + '/topics/' + topicnmb + '/ST01/' + quesnmb + '/.json', tobeUpdated);
-    this.setState({topics: await topicService.getAll()});
+    await axios.patch(url + '/topics/' + topicnmb + '/ST01/' + quesnmb + '/.json', tobeUpdated);
+    const topics = await topicService.getAll()
+    this.setState({ topics, questions: [], message: "question " + tobeUpdated.text + " added ", option1: '', option3: '', option5: '', text: ''});
+    setTimeout(() => {
+        this.setState({ message: null })
+}, 5000)
 }
 
 click = (event) => {
@@ -226,6 +244,7 @@ click = (event) => {
 }
 
     render() {
+      const topicsToShow = this.state.topics.filter(t => typeof t === 'object')
         return (
             <div className="surveyContainer">
 
@@ -238,13 +257,15 @@ click = (event) => {
 
                 <input type="submit" onClick={this.newProfToDB} value="Lähetä"/>
                 </form>
-
+                {!this.state.message ? null : <div className="Notification">
+                  <Notification message={this.state.message}/>
+                  </div>}
             </div>
             <div>
                 <table className="adminTable">
-                   <AdminList topics={this.state.topics} changeValue={this.changeValue} click={this.click} saveChanges={this.saveChanges}
+                   <AdminList topics={topicsToShow} changeValue={this.changeValue} click={this.click} saveChanges={this.saveChanges}
                    showQuestions={this.showQuestions} questions={this.state.questions} deleteProf={this.deleteProf}
-                   editQuestions={this.editQuestions} deleteQuestion={this.deleteQuestion}/>
+                   editQuestions={this.editQuestions} deleteQuestion={this.deleteQuestion} selectedProf={this.state.selectedProf}/>
                </table>
                <form className="adminForm">
                    <h3>Lisää uusi kysymys valittuun kompetenssiin tästä</h3>
