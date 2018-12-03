@@ -19,7 +19,7 @@ const AdminList = ({ topics, deleteProf, showQuestions, questions, deleteQuestio
      <td><button id={topic.text} onClick={showQuestions}>Edit</button></td>
      </tr>
      ))}
-
+     {selectedProf !== '' ? <tr><td>Kysymykset kompetenssiin <b>{selectedProf}</b> alla</td></tr> : null}
      {questions.map((a, i) =>
        <AdminTopicItem key={i} topic={a} iteration={i} saveChanges={saveChanges} changeValue={changeValue}
        editQuestions={editQuestions} deleteQuestion={deleteQuestion}/>

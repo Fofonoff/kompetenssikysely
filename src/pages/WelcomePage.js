@@ -20,7 +20,7 @@ class WelcomePage extends Component {
                         <div><img src={palkki} alt="palkkI" height="120%" width="80%" /></div>
                         <div><p>
                             <b>A. YLEISET KOMPETENSSIT</b>, ja<br />
-                            <b>B. ASIANTUNTIJAN OSAAMINEN</b>, joista voit yhden tai useamman.<br />
+                            <b>B. ASIANTUNTIJAN OSAAMINEN</b>, joista voit valita yhden tai useamman.<br />
                         </p></div>
                     </div>
                     <br></br><p>Kompetenssityökalu on toteutettu osana Taidot Työhön –hanketta, jota on rahoittanut Strategisen tutkimuksen neuvosto vuosina 2016-2019. Haaga-Helia ammattikorkeakoulu ylläpitää työkalua ja siihen liittyviä nettisivuja.</p>
