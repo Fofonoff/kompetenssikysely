@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 import firebaseui from 'firebaseui';
 
-class test extends Component {
+class Login extends Component {
 
     componentDidMount() {
         let ui = new firebaseui.auth.AuthUI(firebase.auth());
@@ -62,4 +62,4 @@ class test extends Component {
     }
 }
 
-export default test;
+export default Login;

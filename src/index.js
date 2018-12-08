@@ -4,14 +4,14 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import test from './components/test';
+import Login from './components/Login';
 import Admin from './components/Admin';
 import AuthorizedRoute from './components/AuthorizedRoute';
 
 ReactDOM.render(
     <Router>
         <Switch>
-        <Route path="/login" component={test}></Route>
+        <Route path="/login" component={Login}></Route>
         <AuthorizedRoute exact path="/admin" component={Admin} />
         <Route path="/" component={App}></Route>
         </Switch>

@@ -2,7 +2,6 @@ import { Component } from 'react';
 import React from 'react';
 import firebase from 'firebase';
 import { Route, } from 'react-router-dom';
-//import Route from 'react-router-dom';
 import { Redirect } from 'react-router';
 
 
