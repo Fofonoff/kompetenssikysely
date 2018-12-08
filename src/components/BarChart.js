@@ -43,8 +43,8 @@ class BarChart extends Component {
                     }
                 })
             })
-            let resultMultiD = result.map((a) => a[1]);
-            let avgData = resultMultiD.flat();
+
+            let avgData = result.map((a) => a[1]);
 
             let data = {
                 labels: answerKeys, //tähän kyssärit db:stä
@@ -133,21 +133,13 @@ class BarChart extends Component {
     }
 
     render() {
-       /* let sortedAnswers = this.props.answers.map((a) => a).sort((a, b) => a.value - b.value).reverse();
-        let rows = sortedAnswers.map((item, index) => item.category === "ammatti" && (item.value === "1" || item.value === "5") ?
-            <p key={index}><b>{item.answer}:</b> {item.value} {item.text}</p>
-            : null
-        )*/
         var feedBackRows = [];
         var row = [];
         this.state.rows.forEach(nested => {
-            console.log('nested' + nested)
-            console.log(typeof nested);
             Object.values(nested).forEach((item, index) => {
                 row = [...row, item];
             })
             feedBackRows.push(row);
-            console.log(feedBackRows);
         })
 
         return (
@@ -162,9 +154,6 @@ class BarChart extends Component {
                             <div key={index}><b>{element.answer}/{element.topic}:</b><p>{element.value} {element.text}</p></div>
                         ))
                     ))}
-                    { /*<div key={index}><h3>{element.topic}</h3><b>{element.answer}:</b><p>{element.value}{element.text}</p></div>*/}
-                    {/*feedBackRows*/}
-                    {/*<div className="reviewtext">{rows}</div>*/}
                 </div>
                 {this.props.surveyState !== 6
                     ? <div>

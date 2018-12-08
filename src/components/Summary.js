@@ -4,7 +4,7 @@ const Summary = ({ moveForward }) => {
 
     return (
         <div className="">
-            <div class="summaryPrint">
+            <div className="summaryPrint">
                 <img src={print} id="cursor-hover" alt="Print" onClick={() => { window.print() }} />
                 <button className="buttonForward" onClick={moveForward}>Jatka</button>
             </div>
