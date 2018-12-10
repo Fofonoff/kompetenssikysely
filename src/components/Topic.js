@@ -1,25 +1,15 @@
 import React from 'react'
 import TopicItem from './TopicItem'
 
-const Topic = ({ topic, show, subs, changeOption }) => {
-	if(subs.length === 0) {
-	return (
-	<div>
-	<h2 onClick={(e) => show(e, topic)}>{topic.text}</h2>
-	</div>
-	)
-	} else {
+const Topic = ({ topic, changeOption, get }) => {
 
-const obj = subs[0]
-const topicArray = Object.values(obj).map(topic => topic)
-
-		return (
-	<div>
-	<h2 onClick={(e) => show(e, topic)}>{topic.text}</h2>
-	{subs[0].text !== topic.text ? null : topicArray.map((topic, i) => <TopicItem key={i} changeOption={changeOption} topic={topic} ></TopicItem>)}
-	</div>
-	)
-	}
+  return (
+    <div className="topicContainer">
+      <h2>{topic.topic}</h2>
+      {Object.values(topic.subs).map((subtopic, i) =>
+        <TopicItem key={i} changeOption={changeOption} get={get} topic={subtopic} parent={topic.topic}></TopicItem>)}
+    </div>
+  )
 }
 
 export default Topic

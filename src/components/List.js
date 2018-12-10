@@ -1,27 +1,23 @@
-import React from 'react'
-import Topic from './Topic'
+import React from 'react';
+import Topic from './Topic';
 
-const List = ({ topics, show, subs, changeOption, sendAnswers }) => {
+const List = ({ topics, changeOption, sendAnswers, move, getChecked }) => {
 
-/*if(sub.length !== 0) {
-let array = []
-Object.keys(sub).forEach(function (key) {
-	if (typeof sub[key] === 'object'){
-		array.push(sub[key])
-	}
-})
-}*/
+  return (
+    <div>
+      <div className="surveyContainer">
+        <div className="instructionHeader">	<h5>Valitse seuraavissa YKSI PARHAITEN osaamistasi kuvaava taso: 1 = perustaso, 3 = hyvä taso tai 5 = erinomainen taso.</h5></div>
+        <form onSubmit={sendAnswers}>
+          {topics.map((topic, i) =>
+            <Topic key={i} topic={topic} changeOption={changeOption} get={getChecked}></Topic>)}
+          <button className="buttonBackward" onClick={(e) => move(e, -1)}>Takaisin</button>
+          <button className="buttonForward" type="submit">Lähetä vastaukset</button>
+          {/* <button className="buttonstyleBackward" onClick={moveBackward}>Takaisin</button> */}
+        </form>
 
-	return (
-		<div>
-		<h2>This is a List</h2>
-		<form onSubmit={sendAnswers}>
-		{topics.filter(t => t.text !== 'yleinen').map((topic, i) => <Topic key={i} topic={topic} show={show} subs={subs} 
-		 changeOption={changeOption}></Topic>)}
-		 <button type="submit">send answers</button>
-		 </form>
-		</div>
-		)
+      </div>
+    </div>
+  )
 }
 
 export default List

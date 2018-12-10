@@ -1,161 +1,288 @@
 import React from 'react';
 import './App.css';
-import fire from './fire'
-import List from './components/List'
-
+import List from './components/List';
+import SelectProfession from './components/SelectProfession';
+import BarChart from './components/BarChart';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import WelcomePage from './pages/WelcomePage';
+import GeneralList from './components/GeneralList';
+import topicService from './services/topics';
+import answerService from './services/answers';
+import feedbackService from './services/feedback'
+import RadarChart from './components/RadarChart';
+import Summary from './components/Summary';
+import Improvement from './components/Improvement';
 
 class App extends React.Component {
-  constructor(){
-    super()
-    this.state = {
-      topics: [],
-      subtopics: [],
-      yleinen: {},
-      answers: [],
-      key: '',
-      surveyState: 0,
-      states : {
-        PROFESSION: 0,
-        PROFANSW: 1
-      },
-      kakka: ''
+    constructor() {
+        super()
+        this.state = {
+            canSubmit: false,
+            topics: [],
+            genTopics: [],
+            genGenTopics: [],
+            bgInf: '',
+            profTopics: [],
+            feedback: [],
+            answers: [],
+            surveyState: 0,
+            states: {
+                WelcomePage: 0,
+                General: 1,
+                General2: 2,
+                Radar: 3,
+                SELECTPROF: 4,
+                PROFESSION: 5,
+                PROFANSW: 6,
+                SUMMARY: 7,
+                IMPROV: 8,
+            },
+            professionAnswers: [],
+            selectedTopics: [],
+            calculated: false,
+            profAverages: {
+                values: [],
+                answers: []
+            }
+        }
     }
-  }
 
-//child tilalla voi olla myös "child_added", "child_moved", "child_removed" tai "value"
-// "on" -metodi: This is the primary way to read data from a Database. Your callback will be
-//triggered for the initial data and again whenever the data changes.
-// Use off( ) to stop receiving updates. See Retrieve Data on the Web for more details.
-// https://firebase.google.com/docs/reference/js/firebase.database.Reference
-  componentDidMount() {
-    let getAll = []
-    const db = fire.database().ref('topics'); //toinen on answers!
-    db.on('child_added', snapshot => {
-      getAll.push(snapshot.val())
-      this.setState({ topics: getAll })
-      this.fetchAnswers()
-    })
-  }
+    async componentDidMount() {
+        const topics = await topicService.getAll() //haetaan tietokannan tiedot rest-urlista asynkronisesti ja asetetaan tilaan
+        const professionAnswersAll = await answerService.getAll()
 
-// Listens for exactly one event of the specified event type, and then stops listening.
-//This is equivalent to calling on(), and then calling off() inside the callback function.
-//tää alempi componentDidMount toimii promiseilla
- /*   componentDidMount() {
-  let getAll = []
-  const db = fire.database().ref('topics')
-  db.once('child_added').then(  snapshot => {
-    getAll.push(snapshot.val())
-    this.setState({topics: getAll})
-  })
-  }*/
+        const professionAnswers = professionAnswersAll.filter(t => typeof t === 'object')
+        const filterGeneral = topics.filter(t => t.category === 'yleinen' && typeof t === 'object')
+        const genTopics = Object.values(filterGeneral[0]).map(t => t).filter(t => typeof t === 'object' && t.text !== 'Vastaajan taustatiedot')
+        const genGenTopics = Object.values(filterGeneral[0]).map(t => t).filter(t => typeof t === 'object' && t.text === 'Vastaajan taustatiedot')
+        const profTopics = topics.filter(t => typeof t === 'object')
+        const bgInf = genGenTopics[0].text;
 
-//tää asynkronisesti
- /*async componentDidMount() {
-  let getAll = []
-  const db = await fire.database().ref('topics')
-  const result = await db.once('child_added')
-  getAll.push(result.val())
-    this.setState({topics: getAll})
-  }*/
-
-changeOption = (event) => {
-const answerObj = {
-  answer: event.target.name,
-  value: event.target.value
-}
-
-const updatedAnswers = this.state.answers.filter(answer => answerObj.answer !== answer.answer)
-this.setState({answers: updatedAnswers.concat(answerObj)})
-}
-
-show = (event, item) => {
-  event.preventDefault()
-  console.log('clicked item!', item)
-const subtopics = Object.values(item).map(topic => topic).filter(o => typeof o === 'object')
-  if(this.state.subtopics.length === 0){
-    this.setState({subtopics})
-  } else {
-    this.setState({subtopics: []})
-  }
-}
-
-sendAnswers = (event) => {
-  event.preventDefault()
-  console.log('sendAnswers clicked!')
-
-  const dataObject = {
-    date: '9/9/2018',
-    topic: this.state.subtopics[0].text,
-    Answers : this.state.answers
-  }
-  if(this.state.key === ''){
- let key = fire.database().ref().child('answers').push(dataObject);
- // let key = {
-   // key: 'kakkamies'
-  //}
-  this.setState({ key: key.key,
-                surveyState: this.state.surveyState + 1 })
-  } else {
-    let key = fire.database().ref('answers').child(this.state.key).set(dataObject);
-    this.setState({ surveyState: this.state.surveyState +1 })
-  }
-
-  this.fetchAnswers() 
-}
-
-mergeArrays = (...args) => {
-  return args.reduce((acc, val) => [...acc, ...val]);
-}
-
-fetchAnswers = () => {
-  console.log('fetch Answers triggered!')
-  //const subtopic = this.state.subtopics[0].text
-  const allAnswers = []
-  const rootRef = fire.database().ref()
-  const db = rootRef.child('answers/').orderByChild('topic').equalTo('Henkilöstöhallinto')
-  db.on('child_added', snapshot => {
-      allAnswers.push(snapshot.val())
-      console.log(allAnswers)
-  const onlyAnswers = allAnswers.map(l => l.Answers)
-  console.log('only answers',onlyAnswers)
-let mergedarray = onlyAnswers.reduce((a, b) => [...a, ...b])
-  console.log('onlyValues', mergedarray)
-
-      this.setState({ kakka: mergedarray })
-    })
-
-  
-}
-
-
-
-
-  render() {
-    switch(this.state.surveyState) {
-      case this.state.states.PROFESSION:{
-        return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">this is Sparta</h1>
-        </header>
-        <List topics={this.state.topics} subs={this.state.subtopics} show={this.show}
-             changeOption={this.changeOption} sendAnswers={this.sendAnswers}/>
-      </div>
-    )
-  } 
-      case this.state.states.PROFANSW:{
-        return(
-        <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Ajajajajjaja ja Puerto Rico !</h1>
-        </header>
-        <h2>Here we will render answers</h2>
-      </div>
-      )
-      }
+        this.setState({ professionAnswers, genTopics, genGenTopics, profTopics, topics, bgInf, feedback: await feedbackService.getAll() })
     }
-  }
-}
-    
 
+    changeOption = (event) => {
+
+        const name = event.target.name.split("*")
+
+        const answerObj = {
+            answer: name[0],
+            value: event.target.dataset.aval,
+            topic: event.target.dataset.parent,
+            text: event.target.dataset.atext,
+            category: event.target.dataset.acat
+        }
+        let updatedAnswers = this.state.answers.filter(answer => answerObj.answer !== answer.answer)
+        const duplicateAnswersOnDifferentTopics = this.state.answers.filter(answer => answerObj.answer === answer.answer && answerObj.topic !== answer.topic)
+        if (duplicateAnswersOnDifferentTopics.length > 0) {
+            if (duplicateAnswersOnDifferentTopics[0].topic !== answerObj.topic) {
+                const duplicateAnswers = duplicateAnswersOnDifferentTopics.concat(answerObj)
+                this.setState({ answers: updatedAnswers.concat(duplicateAnswers) })
+            }
+        } else {
+            this.setState({ answers: updatedAnswers.concat(answerObj) })
+        }
+
+    }
+
+    getChecked = (x, item, parent) => {
+        let name = ''
+        if (x.includes("*")) {
+            name = x.split("*")
+        }
+        const result = name === '' ? x : name[0]
+        const filterAnswers = this.state.answers.filter(a => a.answer === result && a.topic === parent)
+        const found = filterAnswers.filter(a => Number(a.value) === item)
+        return found.length === 1
+    }
+
+    getSelected = (x) => {
+        const found = this.state.selectedTopics.filter(a => a.topic === x)
+        return found.length === 1
+    }
+
+    sendAnswers = async (event) => {
+        event.preventDefault()
+        const dateSet = new Date().toLocaleDateString('fi-FI')
+        const answers = this.state.answers.map(a => a = { answer: a.answer, value: a.value, topic: a.topic, category: a.category })
+        const dataObject = { Answers: answers, date: dateSet }
+        await answerService.sendAnswers(dataObject)
+        this.moveForwardProf()
+    }
+
+    changeProfessions = (item) => {
+        const topicObject = { topic: item.text, subs: item.ST01 }
+        const selectedTopics = this.state.selectedTopics.map(topic => topic.topic)
+        if (selectedTopics.includes(topicObject.topic)) {   // filteröidään pois topicit, jotka on jo valittu =>
+            const updatedTopics = this.state.selectedTopics.filter(topic => topic.topic !== topicObject.topic) // kuń painetaan uudestaan - se lähtee pois statesta!!!
+            const updatedAnswers = this.state.answers.filter(answer => answer.topic !== topicObject.topic)
+            this.setState({ selectedTopics: updatedTopics, answers: updatedAnswers })
+        } else {  // muussa tapauksessa lisätään topic listaan
+            this.setState({ selectedTopics: [...this.state.selectedTopics, topicObject] })
+        }
+    }
+
+    handleProfessionAnswers = (event) => {
+        event.preventDefault()
+        const professions = this.state.selectedTopics.map(t => t.topic)
+        const answerArray = []
+        this.state.professionAnswers.forEach((answers) => { //jokainen alkio sisältää vastauslistan
+            professions.forEach((profession, i) => {
+                const topicAnswers = answers.Answers.filter(answer => answer.topic === profession)
+                answerArray.push(topicAnswers)
+            })
+        })
+        if (answerArray.length === 0) {
+            const profAverages = { values: [], answers: [] }
+            this.setState({ profAverages })
+            this.moveForwardProf()
+        } else {
+            const onlyAnswers = answerArray.reduce((a, b) => [...a, ...b]) // kaikki vastaukset valittuihin kompetensseihin
+            const uniqueAnswers = [...new Set(onlyAnswers.map(a => a.answer))] //uniikit vastausnimet
+            const answerAverages = []
+            uniqueAnswers.forEach((element) => {
+                const tempArr = onlyAnswers.filter((answer) =>
+                    element === answer.answer)
+                const valueArr = tempArr.map((a) => Number(a.value));
+                let avg = (valueArr.reduce((previous, current) => current + previous, 0) / valueArr.length).toFixed(2)
+                answerAverages.push(avg);
+                return answerAverages;
+            });
+            const profAverages = { values: answerAverages, answers: uniqueAnswers }
+            this.setState({ profAverages, calculated: true })
+            this.moveForwardProf()
+        }
+    }
+
+    move = (e, x) => {
+        e.preventDefault()
+        window.scrollTo(0, 0)
+        this.setState({ surveyState: this.state.surveyState + x })
+    }
+
+    moveForwardProf = () => {
+        window.scrollTo(0, 0)
+        this.setState({ surveyState: this.state.surveyState + 1 })
+    }
+
+    selectProfessions = (event) => {
+        event.preventDefault()
+        this.handleProfessionAnswers()
+    }
+
+    getGenTopics = () => {
+        return this.state.genTopics.map(a => a.text);
+    }
+
+    render() {
+
+        switch (this.state.surveyState) {
+            default: {
+                return (
+                    <div className="App">
+                        <h2> default </h2>
+                    </div>
+                )
+            }
+
+            case this.state.states.WelcomePage: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <WelcomePage moveForward={this.move} />
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.General: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <GeneralList getChecked={this.getChecked} topics={this.state.genGenTopics} move={this.move} changeOption={this.changeOption} bgInf={this.state.bgInf} />
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.General2: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <GeneralList topics={this.state.genTopics} getChecked={this.getChecked} move={this.move} changeOption={this.changeOption} />
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.Radar: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <RadarChart selectedTopics={this.state.selectedTopics} answers={this.state.answers} move={this.move} getGenTopics={this.getGenTopics} feedback={this.state.feedback}></RadarChart>
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.SELECTPROF: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <SelectProfession topics={this.state.profTopics} handleProfessionsAndMove={this.handleProfessionAnswers}
+                            selectedTopics={this.state.selectedTopics} changeProfessions={this.changeProfessions} getChecked={this.getSelected} move={this.move} />
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.PROFESSION: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <List topics={this.state.selectedTopics} getChecked={this.getChecked}
+                            changeOption={this.changeOption} sendAnswers={this.sendAnswers} move={this.move} />
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.PROFANSW: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        {!this.state.calculated ? null : <BarChart answers={this.state.answers} profAverages={this.state.profAverages}
+                            selectedTopics={this.state.selectedTopics} move={this.move}></BarChart>}
+                        <Footer />
+                    </div>
+                )
+            }
+
+            case this.state.states.SUMMARY: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <div className="summaryPageCharts">
+                            <RadarChart answers={this.state.answers} moveForward={this.moveForward} selectedTopics={this.state.selectedTopics} surveyState={this.state.surveyState}
+                                getGenTopics={this.getGenTopics} feedback={this.state.feedback} />
+                            <BarChart answers={this.state.answers} profAverages={this.state.profAverages} selectedTopics={this.state.selectedTopics} move={this.state.move}
+                                surveyState={this.state.surveyState} getGenTopics={this.getGenTopics} /></div>
+                        <Summary moveForward={this.moveForwardProf} feedback={this.state.feedback} />
+                        <Footer />
+                    </div>
+                )
+            }
+            case this.state.states.IMPROV: {
+                return (
+                    <div className="App">
+                        <Header surveyState={this.state.surveyState} states={this.state.states} />
+                        <Improvement answers={this.state.answers} />
+                        <Footer />
+                    </div>
+                )
+            }
+        }
+    }
+}
 export default App;

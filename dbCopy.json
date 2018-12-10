@@ -1,0 +1,2817 @@
+{
+  "answers" : {
+    "-LSVMOI6poqAqoGWBB_5" : {
+      "Answers" : [ {
+        "answer" : "Toimialasi",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "3"
+      }, {
+        "answer" : "Nykyisen tai viimeisimmän työnantajasi sektori",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "3"
+      }, {
+        "answer" : "Viimeisin tutkintosi",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "3"
+      }, {
+        "answer" : "Viimeisimmän tutkinnon valmistumisajankohta",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "1"
+      }, {
+        "answer" : "Ajan ja tehtävien hallinta",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Stressinhallinta",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Itsetuntemus",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Motivointi",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Ongelmanratkaisu",
+        "category" : "yleinen",
+        "topic" : "Ongelmanratkaisu ja oppiminen",
+        "value" : "3"
+      }, {
+        "answer" : "Oppiminen ja reflektointi",
+        "category" : "yleinen",
+        "topic" : "Ongelmanratkaisu ja oppiminen",
+        "value" : "3"
+      }, {
+        "answer" : "Sosiaalisen median käyttö",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Digitaaliset työkalut",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Digitalisaation mahdollisuudet",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kanavien luotettavuus",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Tietoturva",
+        "category" : "yleinen",
+        "topic" : "Tietoturva ja tekijänoikeudet",
+        "value" : "3"
+      }, {
+        "answer" : "Tekijänoikeudet",
+        "category" : "yleinen",
+        "topic" : "Tietoturva ja tekijänoikeudet",
+        "value" : "3"
+      }, {
+        "answer" : "Arvojen huomioiminen",
+        "category" : "yleinen",
+        "topic" : " Arvot ja uransuunnittelu",
+        "value" : "3"
+      }, {
+        "answer" : "Uransuunnittelu",
+        "category" : "yleinen",
+        "topic" : " Arvot ja uransuunnittelu",
+        "value" : "3"
+      }, {
+        "answer" : "Tiedonhankinta",
+        "category" : "yleinen",
+        "topic" : "Työnhaku ja verkostoituminen",
+        "value" : "3"
+      }, {
+        "answer" : "Työnhaku",
+        "category" : "yleinen",
+        "topic" : "Työnhaku ja verkostoituminen",
+        "value" : "3"
+      }, {
+        "answer" : "Verkostoituminen",
+        "category" : "yleinen",
+        "topic" : "Työnhaku ja verkostoituminen",
+        "value" : "3"
+      }, {
+        "answer" : "Neuvottelutaidot",
+        "category" : "yleinen",
+        "topic" : "Neuvottelu- ja esiintymistaidot",
+        "value" : "3"
+      }, {
+        "answer" : "Esiintyminen",
+        "category" : "yleinen",
+        "topic" : "Neuvottelu- ja esiintymistaidot",
+        "value" : "3"
+      }, {
+        "answer" : "Näkökulmien huomioiminen",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Tiimityö",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Monikulttuurisuus",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Tunneäly",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Strateginen johtaminen",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Strateginen HR",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Päätöksenteon valmistelu",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Henkilöstöresurssien hallinta",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Digitaalinen osaamisen kehittäminen",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Oppimismenetelmät",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Työnantajaimagon rakentaminen",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Rekrytointi",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Vaikuttamisviestintä",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "HR-verkostot",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Työhyvinvointi",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Sitouttaminen",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Diversiteetin huomioiminen",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Monikulttuurinen HR-viestintä",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Kansainvälinen HRM",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Muutoksen organisointi",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Muutosagentit",
+        "category" : "ammatti",
+        "topic" : "Henkilöstöhallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakasluokittelu",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Ostajien tuntemus",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Tavoitteelliset myyntikeskustelutaidot",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakkaan odotusten hallinta",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakassuhteen kehittäminen",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palvelukehitys",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Osallistaminen palvelukehittämiseen",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palvelumuotoilu",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palveluprosessien tuntemus",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palveluongelmien ratkaisu",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Teknologian mahdollisuudet liiketoiminnassa",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kilpailija-analyysi",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kilpailija-analyysi",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakasdatan hyödyntäminen",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Brändin kehittäminen",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Toiminnanohjaus",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Sisältösuunnittelu ja sisällöntuotanto",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Digitaalinen asiakasvuorovaikutus",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Kanavaosaaminen",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Maksetun digitaalisen median hyödyntymäninen",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Kehittyvät teknologiat",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Kansainvälinen markkinointi ja viestintä",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakastietojen tietosuoja",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakastietojen tietosuoja",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Kirjanpito ja taloudelliset tunnusluvut",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Juridiikan osaaminen",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Verotus",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Liiketoiminnan tukena toimiminen",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakaspalvelu",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Taloushallinnon järjestelmien käyttö",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Taulukkolaskentaohjelmien käyttö",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Tietokantaohjelmistojen osaaminen",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Raportointiosaaminen",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Robotiikan hyödyntäminen",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Rahoituksen analysointi",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Rahoituksen suunnittelu",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Oman pääoman rahoitus",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Vieraan pääoman rahoitus",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Rahoitusrakenne",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Investointilaskelmat",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Julkinen rahoitus",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Yrityksen arvonmääritys",
+        "category" : "ammatti",
+        "topic" : "Taloushallinto",
+        "value" : "3"
+      }, {
+        "answer" : "Strateginen ajattelu ja strategiatyö",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Liiketoimintamallit",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Digitaalinen liiketoiminta",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Ennakointi ja toimintaympäristön analysointi",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kilpailijoiden analysointi",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Markkinoiden analysointi",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Markkinoiden analysointi",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Markkinoiden analysointi",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakasymmärrys",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakasymmärrys",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Muutoksen johtaminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kehitystyö",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Innovointi ja luova prosessi",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Innovointi ja luova prosessi",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Prosessien kehittäminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Projektijohtaminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kehittyvät teknologiat ",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Tekoäly ja koneoppiminen",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Tekoäly ja koneoppiminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Verkostojen johtaminen ja kehittäminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiantuntijapalveluiden hyödyntäminen",
+        "category" : "ammatti",
+        "topic" : "Markkinointi ja viestintä",
+        "value" : "3"
+      }, {
+        "answer" : "Asiantuntijapalveluiden hyödyntäminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Ihmisten johtaminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Suorituskyvyn johtaminen",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Viestintä ja vuorovaikutus",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      }, {
+        "answer" : "Vastuullisuus",
+        "category" : "ammatti",
+        "topic" : "Liiketoiminnan kehittäminen",
+        "value" : "3"
+      } ],
+      "date" : "29.11.2018"
+    },
+    "-LSo3WGOUHci_Q2fX4jT" : {
+      "Answers" : [ {
+        "answer" : "Toimialasi",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "1"
+      }, {
+        "answer" : "Nykyisen tai viimeisimmän työnantajasi sektori",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "1"
+      }, {
+        "answer" : "Viimeisin tutkintosi",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "5"
+      }, {
+        "answer" : "Viimeisimmän tutkinnon valmistumisajankohta",
+        "category" : "yleinen",
+        "topic" : "Vastaajan taustatiedot",
+        "value" : "5"
+      }, {
+        "answer" : "Ajan ja tehtävien hallinta",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "1"
+      }, {
+        "answer" : "Stressinhallinta",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Itsetuntemus",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Motivointi",
+        "category" : "yleinen",
+        "topic" : "Itsensä johtaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Ongelmanratkaisu",
+        "category" : "yleinen",
+        "topic" : "Ongelmanratkaisu ja oppiminen",
+        "value" : "1"
+      }, {
+        "answer" : "Oppiminen ja reflektointi",
+        "category" : "yleinen",
+        "topic" : "Ongelmanratkaisu ja oppiminen",
+        "value" : "3"
+      }, {
+        "answer" : "Sosiaalisen median käyttö",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Digitaaliset työkalut",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "1"
+      }, {
+        "answer" : "Digitalisaation mahdollisuudet",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Kanavien luotettavuus",
+        "category" : "yleinen",
+        "topic" : "Yleinen digiosaaminen",
+        "value" : "5"
+      }, {
+        "answer" : "Tietoturva",
+        "category" : "yleinen",
+        "topic" : "Tietoturva ja tekijänoikeudet",
+        "value" : "3"
+      }, {
+        "answer" : "Tekijänoikeudet",
+        "category" : "yleinen",
+        "topic" : "Tietoturva ja tekijänoikeudet",
+        "value" : "3"
+      }, {
+        "answer" : "Arvojen huomioiminen",
+        "category" : "yleinen",
+        "topic" : " Arvot ja uransuunnittelu",
+        "value" : "3"
+      }, {
+        "answer" : "Uransuunnittelu",
+        "category" : "yleinen",
+        "topic" : " Arvot ja uransuunnittelu",
+        "value" : "3"
+      }, {
+        "answer" : "Tiedonhankinta",
+        "category" : "yleinen",
+        "topic" : "Työnhaku ja verkostoituminen",
+        "value" : "3"
+      }, {
+        "answer" : "Työnhaku",
+        "category" : "yleinen",
+        "topic" : "Työnhaku ja verkostoituminen",
+        "value" : "3"
+      }, {
+        "answer" : "Verkostoituminen",
+        "category" : "yleinen",
+        "topic" : "Työnhaku ja verkostoituminen",
+        "value" : "3"
+      }, {
+        "answer" : "Neuvottelutaidot",
+        "category" : "yleinen",
+        "topic" : "Neuvottelu- ja esiintymistaidot",
+        "value" : "3"
+      }, {
+        "answer" : "Esiintyminen",
+        "category" : "yleinen",
+        "topic" : "Neuvottelu- ja esiintymistaidot",
+        "value" : "5"
+      }, {
+        "answer" : "Näkökulmien huomioiminen",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Tiimityö",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Monikulttuurisuus",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Tunneäly",
+        "category" : "yleinen",
+        "topic" : "Tiimityö ja tunneäly",
+        "value" : "3"
+      }, {
+        "answer" : "Kilpailija-analyysi",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "1"
+      }, {
+        "answer" : "Markkinoiden analysointi",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakasluokittelu",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "1"
+      }, {
+        "answer" : "Asiakastietojen tietosuoja",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Ostajien tuntemus",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Tavoitteelliset myyntikeskustelutaidot",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "5"
+      }, {
+        "answer" : "Asiakkaan odotusten hallinta",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Asiakassuhteen kehittäminen",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palvelukehitys",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Osallistaminen palvelukehittämiseen",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palvelumuotoilu",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "5"
+      }, {
+        "answer" : "Palveluprosessien tuntemus",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Palveluongelmien ratkaisu",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      }, {
+        "answer" : "Teknologian mahdollisuudet liiketoiminnassa",
+        "category" : "ammatti",
+        "topic" : "Myyntiosaaminen",
+        "value" : "3"
+      } ],
+      "date" : "3.12.2018"
+    },
+    "table" : "answers"
+  },
+  "feedback" : {
+    "Radarchart" : {
+      "High" : [ {
+        "name" : "Ajan ja tehtävien hallinta",
+        "text" : "osaat aikatauluttaa, suunnitella ja priorisoida keskittyen olennaiseen."
+      }, {
+        "name" : "Stressinhallinta",
+        "text" : "osaat ennaltaehkäistä stressiä."
+      }, {
+        "name" : "Itsetuntemus",
+        "text" : "oma arviosi osaamisestasi ja vahvuuksistasi on samansuuntaista saamasi palautteen kanssa."
+      }, {
+        "name" : "Motivointi",
+        "text" : "tunnistat tekijät, jotka motivoivat sinua ja osaat motivoida itseäsi erilaisissa tilanteissa."
+      }, {
+        "name" : "Ongelmanratkaisu",
+        "text" : "osaat priorisoida ratkaisuvaihtoehtoja ja esittää ratkaisuja analyysin perusteella."
+      }, {
+        "name" : "Oppiminen ja reflektointi",
+        "text" : "osaat monipuolisesti ja tavoitteellisesti reflektoida ja kehittää osaamistasi."
+      }, {
+        "name" : "Sosiaalisen median käyttö",
+        "text" : "käytät sosiaalisen median kanavia ja tuotat niihin sisältöjä."
+      }, {
+        "name" : "Digitaaliset työkalut",
+        "text" : "seuraat aktiivisesti toimialasi digitaalisten palvelujen kehittämistä ja käytät työkaluja tarpeen mukaan."
+      }, {
+        "name" : "Digitalisaation mahdollisuudet",
+        "text" : "osallistut toimintatapojesi ja työsi kehittämiseen uuden teknologian avulla."
+      }, {
+        "name" : "Kanavien luotettavuus",
+        "text" : "osaat viestiä sisältöjen epäluotettavuudesta ja käyttää sovelluksia tietojen luotettavuuden todentamiseksi."
+      }, {
+        "name" : "Tietoturva",
+        "text" : "osaat todentaa tietojen käyttöä sekä ehkäistä väärinkäyttöä tietoturvatyökalujen avulla."
+      }, {
+        "name" : "Tekijänoikeudet",
+        "text" : "osaat soveltaa alasi tekijänoikeus- ja lisenssisääntöjä erilaisissa tilanteissa."
+      }, {
+        "name" : "Arvojen huomioiminen",
+        "text" : "osaat huomioida omien arvojesi ja työsi arvojen välistä sopivuutta ja toimia niiden mukaisesti."
+      }, {
+        "name" : "Uransuunnittelu",
+        "text" : "olet tehnyt urasuunnitelman ja hyödynnät sitä työurallasi."
+      }, {
+        "name" : "Tiedonhankinta",
+        "text" : "osaat hyödyntää rekrytointiin ja työpaikkoihin liittyvää tietoa oman urasi rakentamisessa sekä olet mukana sosiaalisissa kanavissa, jotka vinkkaavat alasi työpaikoista."
+      }, {
+        "name" : "Työnhaku",
+        "text" : "osaat etsiä piilotyöpaikkoja ja luoda itsellesi työmahdollisuuksia."
+      }, {
+        "name" : "Verkostoituminen",
+        "text" : "sinulla on ammatillisia verkostoja, joissa toimit aktiivisesti."
+      }, {
+        "name" : "Näkökulmien huomioiminen",
+        "text" : "osallistat muita keskusteluun siten, että he tuottavat arvoa tuovia näkökulmia ja kykenet muotoilemaan tarvittaessa yhteisen näkemyksen."
+      }, {
+        "name" : "Neuvottelutaidot",
+        "text" : "osaat asettua toisen osapuolen asemaan ja löytää ratkaisuja, jossa kaikki voittavat."
+      }, {
+        "name" : "Esiintyminen",
+        "text" : "osaat esiintyessäsi huomioida yleisön tunnelmat ja pystyt reagoimaan tunnelmaan."
+      }, {
+        "name" : "Tiimityö",
+        "text" : "osaat toimia osana tiimiä."
+      }, {
+        "name" : "Monikulttuurisuus",
+        "text" : "kykenet rakentamaan arvostavan työskentely-ympäristön eri kulttuureista tulevien tiimien jäsenten kesken."
+      }, {
+        "name" : "Tunneäly",
+        "text" : "tunnistat ja huomioit omia muiden tunteita sekä kykenet osoittamaan empatiaa."
+      } ],
+      "Low" : [ {
+        "name" : "Ajan ja tehtävien hallinta",
+        "text" : "että aikataulutat työsi, noudatat aikatauluja ja priorisoit tehtäväsi."
+      }, {
+        "name" : "Stressinhallinta",
+        "text" : "että löydät itsellesi työkaluja, joilla ennaltaehkäiset stressiä."
+      }, {
+        "name" : "Itsetuntemus",
+        "text" : "että kehität itseäsi palautteen avulla ja rakennat toimintaasi vahvuuksiesi varaan."
+      }, {
+        "name" : "Motivointi",
+        "text" : "että opit tunnistamaan motivoivat tekijät ja osaat motivoida itseäsi erilaisissa tilanteissa."
+      }, {
+        "name" : "Ongelmanratkaisu",
+        "text" : "että opit priorisoimaan ratkaisuvaihtoehtoja eri työkaluilla ja osaat esittää ratkaisuja analyysin perusteella."
+      }, {
+        "name" : "Oppiminen ja reflektointi",
+        "text" : "että osaat kommunikoida oman osaamisesi myös muille ja tavoitteellisesti reflektoida ja kehittää osaamistasi."
+      }, {
+        "name" : "Sosiaalisen median käyttö",
+        "text" : "että seuraat ammatillisia sosiaalisen median kanavia sekä jatkossa tuotat itse sisältöjä sosiaalisen median kanaviin."
+      }, {
+        "name" : "Digitaaliset työkalut",
+        "text" : "että opettelet käyttämään organisaatiosi digitaalisia työkaluja ja alat seurata aktiivisesti toimialasi digitaalisten palvelujen kehittämistä."
+      }, {
+        "name" : "Digitalisaation mahdollisuudet",
+        "text" : "että tutustut uuden teknologian mahdollisuuksiin ja pyrit mukaan toimintatapojen ja/tai työn kehittämiseen uuden teknologian avulla."
+      }, {
+        "name" : "Kanavien luotettavuus",
+        "text" : "että opettelet viestimään sisältöjen epäluotettavuudesta kanavien ylläpitäjille sekä käyttämään sovelluksia tietojen luotettavuuden todentamiseksi."
+      }, {
+        "name" : "Tietoturva",
+        "text" : "että opit todentamaan tietojen käyttöä ja ehkäisemään väärinkäyttöä tietoturvatyökalujen avulla."
+      }, {
+        "name" : "Tekijänoikeudet",
+        "text" : "että tunnistat tekijänoikeussäännöt, noudatat niitä ja osaat soveltaa tekijänoikeus- ja lisenssisääntöjä erilaisissa tilanteissa."
+      }, {
+        "name" : "Arvojen huomioiminen",
+        "text" : "että tunnistat organisaatiosi arvot sekä osaat huomioida omien arvojesi ja työsi välistä sopivuutta."
+      }, {
+        "name" : "Uransuunnittelu",
+        "text" : "että teet itsellesi urasuunnitelman ja hyödynnät suunnitelmaa aktiivisesti omalla työurallasi."
+      }, {
+        "name" : "Tiedonhankinta",
+        "text" : "että hyödynnät rekrytointiin ja työpaikkoihin liittyvää tietoa oman urasi rakentamisessa sekä liityt mukaan työpaikoista vinkkaaviin sosiaalisiin medioihin."
+      }, {
+        "name" : "Työnhaku",
+        "text" : "että hyödynnät verkostojasi piilotyöpaikkojen hakemisessa."
+      }, {
+        "name" : "Verkostoituminen",
+        "text" : "että tunnistat ammatillisen verkoston, johon kuulut ja ryhdyt toimimaan verkostoissa."
+      }, {
+        "name" : "Näkökulmien huomioiminen",
+        "text" : "että houkuttelet muita mukaan keskusteluun tuomaan arvoa tuottavia näkökulmia ja opettelet tarvittaessa muotoilemaan yhteisen näkemyksen."
+      }, {
+        "name" : "Neuvottelutaidot",
+        "text" : "että opit asettumaan toisen osapuolen asemaan kaikkia tyydyttävien ratkaisujen löytämiseksi."
+      }, {
+        "name" : "Esiintyminen",
+        "text" : "että opit esiintyessäsi huomioimaan kohdeyleisön tarpeet ja tunnelmat sekä reagoimaan niihin."
+      }, {
+        "name" : "Tiimityö",
+        "text" : "että osaat toimia osana tiimiä."
+      }, {
+        "name" : "Monikulttuurisuus",
+        "text" : "että osaat huomioida kulttuurien väliset erot sekä rakentaa arvostavan työskentely-ympäristön eri kulttuureista tulevien tiimin jäsenten kesken."
+      }, {
+        "name" : "Tunneäly",
+        "text" : "että opettelet tunnistamaan omia ja muiden tunnetiloja ja osoittamaan empatiaa."
+      } ]
+    }
+  },
+  "topics" : [ {
+    "ST00" : {
+      "SST01" : {
+        "category" : "Yleisettiedot",
+        "option1" : {
+          "text" : "Työntekijä/alempi toimihenkilö",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Asiantuntija/ylempi toimihenkilö",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Esimies/johtaja",
+          "value" : 5
+        },
+        "text" : "Toimialasi",
+        "type" : "select"
+      },
+      "SST02" : {
+        "category" : "Yleisettiedot",
+        "option1" : {
+          "text" : "Teollisuus, energia, rakentaminen",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Yksityiset palvelut",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Julkinen sektori",
+          "value" : 5
+        },
+        "text" : "Nykyisen tai viimeisimmän työnantajasi sektori",
+        "type" : "select"
+      },
+      "SST03" : {
+        "category" : "Yleisettiedot",
+        "option1" : {
+          "text" : "Opistotasoinen tutkinto",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Ammattikorkeakoulututkinto (tradenomi, insinööri)",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Alempi korkeakoulututkinto yliopistosta (kandidaatti)",
+          "value" : 5
+        },
+        "option6" : {
+          "text" : "Ylempi ammattikorkeakoulututkinto",
+          "value" : 7
+        },
+        "option7" : {
+          "text" : "Ylempi korkeakoulututkinto yliopistosta (maisteri)",
+          "value" : 9
+        },
+        "option8" : {
+          "text" : "Jatkotutkinto (lisensiaatti tai tohtori)",
+          "value" : 11
+        },
+        "text" : "Viimeisin tutkintosi",
+        "type" : "select"
+      },
+      "SST04" : {
+        "category" : "Yleisettiedot",
+        "option1" : {
+          "text" : "0-4 vuotta sitten",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "5-9 vuotta sitten",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "10-19 vuotta sitten",
+          "value" : 5
+        },
+        "option7" : {
+          "text" : "20 vuotta tai enemmän",
+          "value" : 7
+        },
+        "text" : "Viimeisimmän tutkinnon valmistumisajankohta",
+        "type" : "select"
+      },
+      "text" : "Vastaajan taustatiedot"
+    },
+    "ST01" : {
+      "SST01" : {
+        "category" : "Itsensä johtaminen",
+        "option1" : {
+          "text" : "Teen tehtäviäni yleensä sitä mukaan, kun niitä ilmestyy.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Teen  yleensä töistäni aikataulun, jota pyrin noudattamaan.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Suunnittelen ja priorisoin säännöllisesti työtehtäväni keskittyen olennaiseen.",
+          "value" : 5
+        },
+        "text" : "Ajan ja tehtävien hallinta",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Itsensä johtaminen",
+        "option1" : {
+          "text" : "Tiedän, miten stressiä voisi hallita, mutta tunnen itseni usein stressaantuneeksi.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Saan useimmiten hallittua stressiä työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan ennaltaehkäistä haitallista stressiä eikä stressi ole minulle ongelma.",
+          "value" : 5
+        },
+        "text" : "Stressinhallinta",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "category" : "Itsensä johtaminen",
+        "option1" : {
+          "text" : "Tiedän omat ominaisuuteni, vahvuuteni, kehittämiskohteeni ja osaamiseni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Rakennan toimintani vahvuuksieni varaan ja hyödynnän saamani kritiikin kehittämisessäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Oma arvioni osaamisestani ja vahvuuksistani on samansuuntaista saamani palautteen kanssa.",
+          "value" : 5
+        },
+        "text" : "Itsetuntemus",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "category" : "Itsensä johtaminen",
+        "option1" : {
+          "text" : "Tiedän kiinnostuksen kohteeni työssäni ja työelämässä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnistan, mitkä ulkoiset ja sisäiset tekijät motivoivat minua työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan motivoida itseäni erilaissa työtilanteissa ja -ympäristöissä.",
+          "value" : 5
+        },
+        "text" : "Motivointi",
+        "type" : "radio"
+      },
+      "text" : "Itsensä johtaminen"
+    },
+    "ST02" : {
+      "SST01" : {
+        "category" : "Ongelmanratkaisu ja oppiminen",
+        "option1" : {
+          "text" : "Osaan hankkia tietoa nykytilasta ja tunnistan syy- ja seuraussuhteita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan suositella sopivinta vaihtoehtoa ja perustella sitä erilaisin argumentein ja kriteerein.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan priorisoida ratkaisuvaihtoehtoja eri työkaluilla ja esittää ratkaisuja analyysin perusteella.",
+          "value" : 5
+        },
+        "text" : "Ongelmanratkaisu",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Ongelmanratkaisu ja oppiminen",
+        "option1" : {
+          "text" : "Kouluttautumisen lisäksi tunnistan myös työssä oppimisen taitoja.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Kommunikoin oman osaamiseni ja oppimiseni selkeästi muille.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Reflektoin ja kehitän osaamistani monipuolisesti ja tavoitteellisesti.",
+          "value" : 5
+        },
+        "text" : "Oppiminen ja reflektointi",
+        "type" : "radio"
+      },
+      "text" : "Ongelmanratkaisu ja oppiminen"
+    },
+    "ST03" : {
+      "SST01" : {
+        "category" : "Digiosaaminen",
+        "option1" : {
+          "text" : "Seuraan ammatillisia kanavia ja kirjoittajia eri sosiaalisissa medioissa (Facebook, LinkedIn, Twitter...)",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan luoda sosiaalisen median kanaviin tekstejä, hyperlinkkejä ja videoita.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Tuotan aktiivisesti sisältöä sosiaaliseen mediaan työssäni ja vapaa-ajallani.",
+          "value" : 5
+        },
+        "text" : "Sosiaalisen median käyttö",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Digiosaaminen",
+        "option1" : {
+          "text" : "Tiedän, millaisia digitaalisia työkaluja organisaatiomme tarjoaa henkilökunnan käyttöön.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan käyttää organisaatiomme digitaalisia työkaluja ja niiden erilaisia ominaisuuksia.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Seuraan aktiivisesti toimialani digitaalisten palvelujen kehittämistä ja otan uusia työkaluja käyttöön tarpeen mukaan.",
+          "value" : 5
+        },
+        "text" : "Digitaaliset työkalut",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "category" : "Digiosaaminen",
+        "option1" : {
+          "text" : "Tunnistan automatisaation, robotisaation ja/tai tekoälyn vaikutuksia toimialaani ja työhöni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Ideoin uuden teknologian mahdollisuuksia liiketoiminnassa, palveluissa ja/tai tuotekehityksessämme.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osallistun aktiivisesti toimintatapojen ja/tai työni kehittämiseen organisaatiossamme uuden teknologian avulla.",
+          "value" : 5
+        },
+        "text" : "Digitalisaation mahdollisuudet",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "category" : "Digiosaaminen",
+        "option1" : {
+          "text" : "Osaan arvioida digitaalisten kanavien sisällön luotettavuutta.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan raportoida sisällön luotettavuutta kanavan ylläpitäjälle.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan käyttää sovelluksia tietojen luotettavuuden todentamiseksi.",
+          "value" : 5
+        },
+        "text" : "Kanavien luotettavuus",
+        "type" : "radio"
+      },
+      "text" : "Yleinen digiosaaminen"
+    },
+    "ST04" : {
+      "SST01" : {
+        "category" : "Tietoturva ja tekijänoikeudet",
+        "option1" : {
+          "text" : "Tiedän alaamme liittyvät tietoturvasäännöt ja ohjeet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan turvata järjestelmiä ja sisältöjä ohjeiden mukaan sekä hallinnoida salasanojani luotettavasti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan todentaa tietojen käyttöä ja ehkäistä väärinkäyttöä tietoturvatyökalujen avulla.",
+          "value" : 5
+        },
+        "text" : "Tietoturva",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Tietoturva ja tekijänoikeudet",
+        "option1" : {
+          "text" : "Tiedän, millaisia ovat organisaatiomme tekijänoikeus- ja lisenssisäännöt.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan noudattaa keskeisiä tekijänoikeussääntöjä työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan soveltaa alamme tekijänoikeus- ja lisenssisääntöjä erilaisissa tilanteissa.",
+          "value" : 5
+        },
+        "text" : "Tekijänoikeudet",
+        "type" : "radio"
+      },
+      "text" : "Tietoturva ja tekijänoikeudet"
+    },
+    "ST05" : {
+      "SST01" : {
+        "category" : "Arvot ja urasuunnittelu",
+        "option1" : {
+          "text" : "Olen tunnistanut elämääni ja työhöni liittyvät arvoni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Olen tunnistanut työympäristöni viralliset ja tosiasialliset arvot.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan huomioida omien arvojeni ja työni välistä sopivuutta ja toimia sen mukaisesti.",
+          "value" : 5
+        },
+        "text" : "Arvojen huomioiminen",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Arvot ja urasuunnittelu",
+        "option1" : {
+          "text" : "Tunnen urasuunnittelun työkaluja ja kanavia ja tiedän, mistä hakea tukea urasuunnitteluun.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tehdä urasuunnitelman ja olen tehnyt sellaisen muutaman kerran urani aikana.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Hyödynnän aktiivisesti ja systemaattisesti urasuunnittelua omalla työurallani.",
+          "value" : 5
+        },
+        "text" : "Urasuunnittelu",
+        "type" : "radio"
+      },
+      "text" : " Arvot ja urasuunnittelu"
+    },
+    "ST06" : {
+      "SST01" : {
+        "category" : "Työnhaku ja verkostoituminen",
+        "option1" : {
+          "text" : "Tunnen rekrytointiin ja työpaikkoihin liittyvät digitaaliset uudet kanavat.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää rekrytointiin ja työpaikkoihin liittyvää tietoa oman urani rakentamisessa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Olen mukana alamme työpaikoista vihjaavissa sosiaalisen median kanavissa.",
+          "value" : 5
+        },
+        "text" : "Tiedonhankinta",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Työnhaku ja verkostoituminen",
+        "option1" : {
+          "text" : "Osaan laatia sähköisen ansioluettelon ja hakemuksen aina hakutilanteeseen sopivalla tavalla.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tehdä työnhakuvideon ja osallistua testeihin ja etähaastatteluihin eri työkaluilla.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan etsiä piilotyöpaikkoja ja luoda itselleni työmahdollisuuksia.",
+          "value" : 5
+        },
+        "text" : "Työnhaku",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "category" : "Työnhaku ja verkostoituminen",
+        "option1" : {
+          "text" : "Tunnen työhöni liittyvät hyödylliset ammatilliset verkostot.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Minulla on ammattillinen verkosto, jota kontaktoin tarvittaessa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Olen profiloinut itseni ammatillisissa verkostoissa ja toimin niissä aktiivisesti.",
+          "value" : 5
+        },
+        "text" : "Verkostoituminen",
+        "type" : "radio"
+      },
+      "text" : "Työnhaku ja verkostoituminen"
+    },
+    "ST07" : {
+      "SST01" : {
+        "category" : "Neuvottelu- ja esiintymistaidot",
+        "option1" : {
+          "text" : "Osaan suunnitella ja asettaa neuvottelulle tavoitteet sekä toimia niiden saavuttamiseksi.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan joustaa epäolennaisissa asioissa päästäkseni tulokseen tärkeämmissä asioissa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan asettua toisen osapuolen asemaan ja löytää ratkaisuja, joissa kaikki voittavat.",
+          "value" : 5
+        },
+        "text" : "Neuvottelutaidot",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Neuvottelu- ja esiintymistaidot",
+        "option1" : {
+          "text" : "Osaan esiintyä ammatissani eri yleisöille.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan huomioida kohdeyleisön tarpeet ja mukauttaa esiintymiseni sen mukaisesti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan esiintyessäni huomioida spontaanisti yleisön tunnelmat ja reagoida niihin.",
+          "value" : 5
+        },
+        "text" : "Esiintyminen",
+        "type" : "radio"
+      },
+      "text" : "Neuvottelu- ja esiintymistaidot"
+    },
+    "ST08" : {
+      "SST01" : {
+        "category" : "Tiimityö ja tunneäly",
+        "option1" : {
+          "text" : "Osaan kertoa ja perustella omat näkemykseni ja antaa muille tilaa keskustelussa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hahmottaa keskustelussa erilaisia näkökulmia ja niiden argumentteja silloinkin, kun olen eri mieltä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan poimia muilta keskusteluun arvoa tuottavia näkökulmia ja muotoilla tarvittaessa yhteisen näkemyksen.",
+          "value" : 5
+        },
+        "text" : "Näkökulmien huomioiminen",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "category" : "Tiimityö ja tunneäly",
+        "option1" : {
+          "text" : "Osaan toimia ryhmässä asiantuntijana yhteisen tavoitteen saavuttamiseksi.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää monipuolisesti tiimin osaamista omassa työssäni ja tuottaa lisäarvoa tiimin kokonaispanokseen.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan luoda hyvän ilmapiirin ja innostaa tiimiä kehittymään yhä paremmaksi.",
+          "value" : 5
+        },
+        "text" : "Tiimityö",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "Option1" : {
+          "text" : "Tunnistan sosiaalisiin tilanteisiin liittyviä kulttuurisia eroja työympäristössä.",
+          "value" : 1
+        },
+        "Option3" : {
+          "text" : "Osaan huomioida kulttuurien väliset erot työpaikalla ja reagoida niihin rakentavasti.",
+          "value" : 3
+        },
+        "Option5" : {
+          "text" : "Osaan rakentaa arvostavan työskentely-ympäristön eri kulttuureista tulevien työntekijöiden kesken.",
+          "value" : 5
+        },
+        "category" : "Tiimityö ja tunneäly",
+        "text" : "Monikulttuurisuus",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "category" : "Tiimityö ja tunneäly",
+        "option1" : {
+          "text" : "Tiedän, millainen merkitys tunteilla on työelämässä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnistan omia tunnetilojani ja säätelen niitä tilanteen vaatimalla tavalla työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Tunnistan ja huomioin myös muiden tunteita sekä osoitan empatiaa.",
+          "value" : 5
+        },
+        "text" : "Tunneäly",
+        "type" : "radio"
+      },
+      "text" : "Tiimityö ja tunneäly"
+    },
+    "category" : "yleinen",
+    "text" : "yleinen"
+  }, {
+    "ST01" : {
+      "SST01" : {
+        "option1" : {
+          "text" : "Tiedän strategisen ajattelun käsitteistön, keskeiset työkalut ja mallit.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan muuttaa strategiset tavoitteet operatiivisiksi suunnitelmiksi ja määritellä näille mittarit ja seurantamallit.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan luoda eri skenaarioida omaan toimintooni (HR, markkinointi jne)  liiketoimintastrategian perusteella ja perustella valitun strategian.",
+          "value" : 5
+        },
+        "text" : "Strateginen johtaminen",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "option1" : {
+          "text" : "Tunnen henkilöstönresurssien ja osaamisen johtamisen eri keinot ja toimijat toimialallamme",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan suunnitella henkilöstön ja osaamisen johtamisen keinot meidän organisaatiossa eri tilanteissa (supistaminen, kasvu, uusi liiketoiminta jne)",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan johtaa henkilöstön resurssiointia ja kehittämistä liiketoiminnan tarpeiden mukaisesti",
+          "value" : 5
+        },
+        "text" : "Strateginen HR",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "option1" : {
+          "text" : "Osaan kerätä tietoa päätöksenteon tueksi ja analysoida yrityksen liiketoimintastrategiaa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan analysoida henkilöstö lukuja päätöksenteon tueksi sekä tunnistaa hiljaisia signaaleja.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan rakentaa päätösehdotuksen johdolle henkilöstöstrategiasta.",
+          "value" : 5
+        },
+        "text" : "Päätöksenteon valmistelu",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "option1" : {
+          "text" : "Osaan tunnistaa tarvittavia toimenpiteitä henkilöstöön liittyvien tunnuslukujen perusteella.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan suunnitella, analysoida ja  seurata henkilöstön tuottavuutta  osana henkilöstöhallintoa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan analysoida ja mallintaa henkilöstöresurssien kokonaisuutta organisaatiossa.",
+          "value" : 5
+        },
+        "text" : "Henkilöstöresurssien hallinta",
+        "type" : "radio"
+      },
+      "SST05" : {
+        "option1" : {
+          "text" : "\"Tiedän osaamisen kehittämisen eri menetelmiä mm. verkko-oppimisessa ja itseopiskelun tukemissa ja käytän niitä henkilöstön kehittämiseen.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan ottaa käyttöön osaamisen kehittämisen digitaalisia menetelmiä ja alustoja organisaatiossa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää oppimisen digitaalisia menetelmiä ja alustoja organisaatiossa.",
+          "value" : 5
+        },
+        "text" : "Digitaalinen osaamisen kehittäminen",
+        "type" : "radio"
+      },
+      "SST06" : {
+        "option1" : {
+          "text" : "Osaan valita sopivat keinot henkilöstön kehittämiseen organisaatiossa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan valita ja hankkia sopivia oppimismenetelmiä erilaisille oppijoille.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää erilaisia oppimismahdollisuuksia kouluttautumisen ja työssäoppimisen kautta.",
+          "value" : 5
+        },
+        "text" : "Oppimismenetelmät",
+        "type" : "radio"
+      },
+      "SST07" : {
+        "option1" : {
+          "text" : "Osaan tukea työantajaimagon rakentamista erilaisilla digitaalisilla alustoilla.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan rakentaa työantajaimagoa digitaalisilla alustoilla ja verkostoissa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää työantajaimagoa digitaalisilla alustoilla ja verkostoissa.",
+          "value" : 5
+        },
+        "text" : "Työnantajaimagon rakentaminen",
+        "type" : "radio"
+      },
+      "SST08" : {
+        "option1" : {
+          "text" : "Tiedän modernin rekrytoinnin uudet tekniikat ja menettelytavat sekä irtisanomisen ja outsourcingin.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää modernin rekrytoinnin uusia digitaalisia tekniikoita ja menettelytapoja sekä hoitaa irtisanomiset asianmukaisesti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan neuvoa muita ja kehittää edelleen rekrytoinnin uusia tekniikoita ja menettelytapoja sekä ohjata ja tukea muita irtisanomisen empaattisessa toteuttamisessa.",
+          "value" : 5
+        },
+        "text" : "Rekrytointi",
+        "type" : "radio"
+      },
+      "SST09" : {
+        "option1" : {
+          "text" : "Tiedän HR-toiminnon vaikuttamisviestinnän menetelmiä ja keinoja.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan arvioida ja sopeuttaa vuorovaikutustani ja viestintääni organisaation ja kohderyhmän mukaan.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Ymmärrän viestintäkriittistä ajattelua ja osaan osoittaa hallitsevani sitouttamisen, motivoimisen ja valmentamisen taitoja.",
+          "value" : 5
+        },
+        "text" : "Vaikuttamisviestintä",
+        "type" : "radio"
+      },
+      "SST10" : {
+        "option1" : {
+          "text" : "Olen aktiivisesti mukana HR-verkostoissa eri kanavissa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää HR-osaston verkostoja esimerkiksi rekrytoinnissa ja osaamisen johtamisessa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan luoda tarpeen mukaan uusia verkostoja ja neuvoa muita verkostoitumisessa.",
+          "value" : 5
+        },
+        "text" : "HR-verkostot",
+        "type" : "radio"
+      },
+      "SST11" : {
+        "option1" : {
+          "text" : "Osaan arvioida ja mitata työilmapiiriä ja työhyvinvointia organisaatiossamme.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää työilmapiiriä ja työhyvinvointia erilaisin keinoin.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tukea ja kehittää esimiehiä työilmapiirin ja työhyvinvoinnin edistämiseksi.",
+          "value" : 5
+        },
+        "text" : "Työhyvinvointi",
+        "type" : "radio"
+      },
+      "SST12" : {
+        "option1" : {
+          "text" : "Tiedän eri keinoja motivoida ja sitouttaa henkilöstöä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan sitouttaa henkilöstöä eri keinoilla.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan vahvistaa organisaatiokulttuuria sitouttamisen ja me-hengen luomiseksi.",
+          "value" : 5
+        },
+        "text" : "Sitouttaminen",
+        "type" : "radio"
+      },
+      "SST13" : {
+        "option1" : {
+          "text" : "Tunnen ikään, sukupuoleen, kansallisuuteen, rotuun jne. liittyvät säädökset ja hyvät käytännöt.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan huomioida diversiteettinäkökohdat henkilöstöön liittyvässä toiminnassa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää HR-tomintoja ja organisaatiota diversiteettinäkökulmasta.",
+          "value" : 5
+        },
+        "text" : "Diversiteetin huomioiminen",
+        "type" : "radio"
+      },
+      "SST14" : {
+        "option1" : {
+          "text" : "Ymmärrän vuorovaikutus- ja viestintäosaamisen erilaisia tyylejä ja kulttuurisia eroja.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan viestiä henkilöstöasioissa kulttuurisensitiivisesti ja eettisesti kestävältä pohjalta.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää henkilöstöhallinnon viestintää ja vuorovaikutusta kulttuurierot huomioiden.",
+          "value" : 5
+        },
+        "text" : "Monikulttuurinen HR-viestintä",
+        "type" : "radio"
+      },
+      "SST15" : {
+        "option1" : {
+          "text" : "Tunnen henkilöstöhallinnon erityispiirteet kansainvälisessä toimintaympäristössä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan suunnitella ja toteuttaa henkilöstöhallinnon toimenpiteitä kansainvälissä erityistilanteissa kuten kommennuksiin tai projekteihin liittyvät kysymykset.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan suunnitella ja johtaa henkilöstönhallintoa monikansallisessa liiketoimintaympäristössä.",
+          "value" : 5
+        },
+        "text" : "Kansainvälinen HRM",
+        "type" : "radio"
+      },
+      "SST16" : {
+        "option1" : {
+          "text" : "Osaan suunnitella muutokseen liittyviä tehtäviä työssäni ja osallistua muutosprojektiin.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan analyysin perusteella laatia vaihtoehtoisia toteutusmalleja ja mittareita sekä seurata tehokkaasti muutoksen läpivientiä organisaatiossa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan suunnitella ja johtaa muutosta organisaatiossamme sekä hallita muutovastarintaa.",
+          "value" : 5
+        },
+        "text" : "Muutoksen organisointi",
+        "type" : "radio"
+      },
+      "SST17" : {
+        "option1" : {
+          "text" : "Osaan tukea esimiehiä heidän muutosjohtamisessaan.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan toimia muutosprojektissa omassa ja muutosagentin roolissa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan johtaa HR-toimintoa muutoksessa tuottamaan lisäarvoa koko muutosprosessiin.",
+          "value" : 5
+        },
+        "text" : "Muutosagentit",
+        "type" : "radio"
+      },
+      "text" : "Henkilöstöhallinto"
+    },
+    "category" : "ammatti",
+    "text" : "Henkilöstöhallinto"
+  }, {
+    "ST01" : {
+      "SST01" : {
+        "option1" : {
+          "text" : "Tiedän alamme tuotteiden ja palveluiden kilpailukyvyn ja elinkaarivaiheet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää alan tuotteiden ja palveluiden elinkaaren vaiheita myyntityössäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää ja hyödyntää erilaisia menetelmiä kilpailijaymmärryksen lisäämiseksi.",
+          "value" : 5
+        },
+        "text" : "Kilpailija-analyysi",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "option1" : {
+          "text" : "Osaan käyttää olemassa olevaa markkina- ja kilpailutietoa omassa myyntityössäni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia ja jakaa kilpailu- ja asiakastietoja organisaatiossamme.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää data-analytiikkaa markkina-ja kilpailjatietojen hankinassa ja myynnin päätöksenteossa.",
+          "value" : 5
+        },
+        "text" : "Markkinoiden analysointi",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "option1" : {
+          "text" : "Tunnistan markkinoilla ja asiakkailla olevia tuote-, palvelu- ja myyntimahdollisuuksia.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan profiloida asiakaskuntaa ja hyödyntää sitä myyntityössäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää asiakasprofiloinnin kriteereitä ja asiakasryhmittelyjä data-analytiikan avulla.",
+          "value" : 5
+        },
+        "text" : "Asiakasluokittelu",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "option1" : {
+          "text" : "Tiedän asiakastiedon hyödyntämiseen liittyvät keskeiset tietosuojanormit.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan soveltaa asiakastiedon tietosuojakysymyksiä asiakasdatan käyttämisessä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan ennalta ehkäistä asiakastiedon tietosuojakysymyksiin liittyvät riskit myyntityössä.",
+          "value" : 5
+        },
+        "text" : "Asiakastietojen tietosuoja",
+        "type" : "radio"
+      },
+      "SST05" : {
+        "option1" : {
+          "text" : "Tunnen hyvin asiakasorganisaatioiden ostajat ja tilaajat.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnen henkilökohtaisesti asiakasorganisaation keskeiset päättäjät.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Seuraan asiakasorganisaation päättäjäverkostossa tapahtuvia henkilstövaihdoksia ja solmin suhteet uusiin henkilöihin.",
+          "value" : 5
+        },
+        "text" : "Ostajien tuntemus",
+        "type" : "radio"
+      },
+      "SST06" : {
+        "option1" : {
+          "text" : "Tiedän tavoitteellisen myyntikeskustelun vaiheet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan toteuttaa tavoitteellisen myyntikeskustelun ottaen huomioon erilaiset tilanteet ja persoonallisuudet.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan soveltaa tavoitteellisen myyntikeskustelun taitoja monikanavaisissa ympäristöissä.",
+          "value" : 5
+        },
+        "text" : "Tavoitteelliset myyntikeskustelutaidot",
+        "type" : "radio"
+      },
+      "SST07" : {
+        "option1" : {
+          "text" : "Osaan vastata asiakkaan odotuksiin myynti- ja palvelutilanteissa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan ylittää asiakkaan henkilökohtaiset odotukset myynti- ja palvelutilanteissa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tuottaa asiakkaan liiketoimintaan liittyvää lisäarvoa.",
+          "value" : 5
+        },
+        "text" : "Asiakkaan odotusten hallinta",
+        "type" : "radio"
+      },
+      "SST08" : {
+        "option1" : {
+          "text" : "Osaan ylläpitää hyviä suhteita ostajiin ja tilaajiin asiakasorganisaatiossa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan ylläpitää asiakassuhdetta, luottamusta ja asiakasuskollisuutta keskeisten toimijoiden kanssa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan ylläpitää ja kehittää asiakassuhdetta, luottamusta ja asiakasuskollisuutta  tulevaa ennakoiden.",
+          "value" : 5
+        },
+        "text" : "Asiakassuhteen kehittäminen",
+        "type" : "radio"
+      },
+      "SST09" : {
+        "option1" : {
+          "text" : "Tiedän palvelukehityksen prosessit ja mallit omassa organisaatiossamme.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnen palvelujen analysointi- ja mallintamisen menetelmiä ja käytän niitä myyntityössä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan käyttää erilaisia kehittämis- ja innovaatiomenetelmiä palvelukehityksessämme.",
+          "value" : 5
+        },
+        "text" : "Palvelukehitys",
+        "type" : "radio"
+      },
+      "SST10" : {
+        "option1" : {
+          "text" : "Osaan hyödyntää saatavilla olevaa asiakastietoa palvelujen kehittämisessä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan osallistaa asiakkaita ja tiimejä ideoimaan uusia palveluita ja kehittämään olemassa olevia palveluita.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan osallistaa verkostojani palvelukehityksessä ja hyödyntää co-creation menetelmiä ja työkaluja palvelukehityksessä.",
+          "value" : 5
+        },
+        "text" : "Osallistaminen palvelukehittämiseen",
+        "type" : "radio"
+      },
+      "SST11" : {
+        "option1" : {
+          "text" : "Osaan tuottaa ideioita uusien tuotteiden ja palveluiden toteuttamiseksi yhdessä muiden kanssa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää palveluideoita yrityksen strategisiin valintoihin perustuen sekä konkretisoida näitä mallintamalla.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan luodan palveluja ja kilpailukykyä muista yrityksistä muodostuvien verkostojen avulla (palvelumuotoilu verkostossa).",
+          "value" : 5
+        },
+        "text" : "Palvelumuotoilu",
+        "type" : "radio"
+      },
+      "SST12" : {
+        "option1" : {
+          "text" : "Tiedän organisaationi tuote-, tuotanto- ja palveluprosessit asiakkaan palvelun toteuttamiseksi.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan yhdistää oman organisaationi prosessit tukemaan asiakkaan ongelman ratkaisua ja palvelua.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan myydä organisaation sisällä on asiakkaiden palvelutarpeet niin, että tuotanto ja palvelutoiminnat ovat sitoutuneita palvelun tuottamiseen. saatiossamme niin, että tuotanto ja palvelutoiminnat ovat sitoutuneita",
+          "value" : 5
+        },
+        "text" : "Palveluprosessien tuntemus",
+        "type" : "radio"
+      },
+      "SST13" : {
+        "option1" : {
+          "text" : "Osaan ratkaista tuotannon ja palveluiden toteuttamisen haasteita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan käyttää omaa vaikutusvaltaani ongelmatilanteiden ratkaisemiseksi omassa organisaatiossani.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan varmistaa ja ratkaista tuotanto- ja palveluongelmia muista organisaatioista muodostuvien verkostojen avulla.",
+          "value" : 5
+        },
+        "text" : "Palveluongelmien ratkaisu",
+        "type" : "radio"
+      },
+      "SST14" : {
+        "option1" : {
+          "text" : "Tunnistan uusia myyntiä ja palveluita tukevia teknologioita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Ymmärrän, miten uudet teknologiat ja digitalisaatio mahdollistavat uutta liiketoimintaa yrityksessämme.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää uutta teknologiaa palvelujemme kehittämisessä.",
+          "value" : 5
+        },
+        "text" : "Teknologian mahdollisuudet liiketoiminnassa",
+        "type" : "radio"
+      },
+      "text" : "Myyntiosaaminen"
+    },
+    "category" : "ammatti",
+    "text" : "Myyntiosaaminen"
+  }, {
+    "ST01" : {
+      "SST01" : {
+        "option1" : {
+          "text" : "Tiedän alamme tuotteiden ja palveluiden kilpailukyvyn ja elinkaarivaiheet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää alamme tuotteiden ja palveluiden elinkaaren vaiheita myyntityössäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää ja hyödyntää erilaisia menetelmiä kilpailijaymmärryksen lisäämiseksi.",
+          "value" : 5
+        },
+        "text" : "Kilpailija-analyysi",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "option1" : {
+          "text" : "Osaan käyttää olemassa olevaa markkina- ja kilpailutietoa omassa työssäni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia ja jakaa kilpailu- ja asiakastietoja organisaatiossamme.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää data-analytiikkaa markkina- ja kilpailijatietojen hankinnassa ja markkinoinnin suunnittelussa.",
+          "value" : 5
+        },
+        "text" : "Markkinoiden analysointi",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "option1" : {
+          "text" : "Osaan seurata asiakasdataa eri kanavissa ja kartoittaa sen perusteella asiakkaan tarpeita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan yhdistellä asiakasdataa eri lähteistä ja mitata markkinoinnin ja viestinnän onnistumista.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tulkita ja soveltaa asiakasdataa monipuolisesti ja ennakoida asiakkaan tilanteita ja tarpeita.",
+          "value" : 5
+        },
+        "text" : "Asiakasdatan hyödyntäminen",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "option1" : {
+          "text" : "Osaan hankkia asiakkaisiin liittyviä tietoja monipuolisesti yrityksen markkinoinnin ja viestinnän suunnittelun perustaksi.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tulkita data-analyysiin perustuvia asiakasprofiileja markkinoinnin ja viestinnän sisältösuunnittelun tueksi.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan laatia data-analyysiin perustuvia konkreettisia asiakaspersoonakuvauksia ja hyödyntää niitä tuloksellisesti sisällön suunnittelussa ja tuotannossa.",
+          "value" : 5
+        },
+        "text" : "Asiakasymmärrys",
+        "type" : "radio"
+      },
+      "SST05" : {
+        "option1" : {
+          "text" : "Tunnen erottuvan ja asiakkaalle merkityksellisen brändin rakentamisen strategiset periaatteet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan rakentaa erottuvaa ja asiakkaalle merkityksellistä brändiä tavoitteellisesti organisaation eri kanavissa ja kontaktipisteissä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan arvioida ja mitata yrityksen brändistrategian onnistumista sekä kehittää yrityksen brändiä dataohjautuvasti.",
+          "value" : 5
+        },
+        "text" : "Brändin kehittäminen",
+        "type" : "radio"
+      },
+      "SST06" : {
+        "option1" : {
+          "text" : "Osaan arvioida ja mitata asiakasyrityksen strategian onnistumista.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää asiakasyrityksen toimintaa dataohjautuvasti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan ennakoida asiakastarpeita analytiikan avulla ja kehittää asiakkaan markkinoinnin ja viestinnän strategiaa, optimointia ja automaatiota.",
+          "value" : 5
+        },
+        "text" : "Toiminnanohjaus",
+        "type" : "radio"
+      },
+      "SST07" : {
+        "option1" : {
+          "text" : "Tunnen innovaatiomenetelmiä ja ymmärrän innovaatiotoiminnan merkityksen liiketoiminnan ytimessä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan valita luovan suunnitteluprosessin eri vaiheisiin sopivia innovointimenetelmiä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan johtaa ja kehittää innovoinnin ja luovan suunnittelun prosesseja jatkuvassa vuorovaikutuksessa asiakkaan kanssa.",
+          "value" : 5
+        },
+        "text" : "Innovointi ja luova prosessi",
+        "type" : "radio"
+      },
+      "SST08" : {
+        "option1" : {
+          "text" : "Tunnen sisältömarkkinoinnin perusperiaatteet ja osaan suunnitella tavoitteellisia sisältökonsepteja asiakaslähtöisesti.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tuottaa asiakasta hyödyttävää tarinallista sisältöä, joka tukee yrityksen brändiä, tunnettuutta ja uskottavuutta.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tuottaa ja kehittää monikanavaisesti tarinallista sisältöä, joka tukee myyntiä ja lisää konversiota.",
+          "value" : 5
+        },
+        "text" : "Sisältösuunnittelu ja sisällöntuotanto",
+        "type" : "radio"
+      },
+      "SST09" : {
+        "option1" : {
+          "text" : "Osaan seurata asiakasdataa ja tuottaa sen perusteella hakukoneoptimoitua ja asiakasta aktivoivaa sisältöä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan yhdistää asiakasdataa eri lähteistä sekä kehittää ja optimoida sisältöä niin, että se aktivoi asiakasta tehokkaammin.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tulkita asiakasdataa ja tuottaa sisältöä, joka osallistaa asiakkaan yrityksen viestintään ja markkinointiin.",
+          "value" : 5
+        },
+        "text" : "Digitaalinen asiakasvuorovaikutus",
+        "type" : "radio"
+      },
+      "SST10" : {
+        "option1" : {
+          "text" : "Osaan valita asiakasdatan perusteella asiakkaan kannalta tarkoituksenmukaiset viestinnän ja markkinoinnin kanavat.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan seurata asiakaskäyttäytymisen trendejä ja muutoksia eri kanavissa ja mukauttaa viestintää ja markkinointia sen mukaisesti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tavoittaa asiakkaat kohdennetusti heidän suosimissaan kanavissa oikea-aikaisesti.",
+          "value" : 5
+        },
+        "text" : "Kanavaosaaminen",
+        "type" : "radio"
+      },
+      "SST11" : {
+        "option1" : {
+          "text" : "Osaan kokeilla ja hyödyntää maksetun digitaalisen median mahdollisuuksia yrityksen markkinoinnissa ja viestinnässä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnen kattavasti maksetun digitaalisen median muodot (display, SEM, natiivi, some, mobiili, video, vaikuttajamarkkinointi jne.) ja toimintaperiaatteet.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hallinnoida ja kehittää maksetun digitaalisen median hyödyntämistä dataohjautuvasti.",
+          "value" : 5
+        },
+        "text" : "Maksetun digitaalisen median hyödyntymäninen",
+        "type" : "radio"
+      },
+      "SST12" : {
+        "option1" : {
+          "text" : "Osaan hyödyntää uusia teknologioita, alustoja ja työkaluja yrityksen markkinoinnissa ja viestinnässä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää uusien teknologioiden hyödynnettävyyttä ja käytettävyyttä yhteistyössä eri alojen osaajien kanssa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Kokeilen ja kehitän jatkuvasti uusia tapoja hyödyntää kehittyviä teknologioita yrityksen markkinoinnissa ja viestinnässä.",
+          "value" : 5
+        },
+        "text" : "Kehittyvät teknologiat",
+        "type" : "radio"
+      },
+      "SST13" : {
+        "option1" : {
+          "text" : "Ymmärrän tekoälyn ja koneoppimisen peruslogiikan.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnistan tekoälyn ja koneoppimisen mahdollisuuksia analytiikan, strategisen kehittämisen ja sisällöntuotannon apuna.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää tekoälyn ja koneoppimisen mahdollisuuksia analytiikan, strategisen kehittämisen ja sisällöntuotannon apuna.",
+          "value" : 5
+        },
+        "text" : "Tekoäly ja koneoppiminen",
+        "type" : "radio"
+      },
+      "SST14" : {
+        "option1" : {
+          "text" : "Osaan hankkia kilpailija- markkina- ja asiakasdataa, joka auttaa ymmärtämään kansainvälisten yleisöjen kulttuurikohtaisia tarpeita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan suunnitella ja tuottaa laadukasta sisältöä, joka vastaa kansainvälisten yleisöjen tarpeisiin kulttuurierot huomioiden.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää yrityksen kansainvälistä markkinointia ja viestintää dataohjautuvasti siten, että asiakastarpeet huomioidaan sekä kulttuurierojen että kielivalintojen näkökulmasta.",
+          "value" : 5
+        },
+        "text" : "Kansainvälinen markkinointi ja viestintä",
+        "type" : "radio"
+      },
+      "SST15" : {
+        "option1" : {
+          "text" : "Tiedän, mitä markkinoinnin ja viestinnän asiantuntijapalveluita on saatavilla.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia markkinoinnin ja viestinnän asiantuntijapalveluita yrityksen tarpeisiin.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan yhdistellä markkinoinnin ja viestinnän asiantuntijapalveluita monipuolisesti ja hankkia niitä yrityksen tarpeisiin kilpailuetua tuottavalla tavalla.",
+          "value" : 5
+        },
+        "text" : "Asiantuntijapalveluiden hyödyntäminen",
+        "type" : "radio"
+      },
+      "SST16" : {
+        "option1" : {
+          "text" : "Tunnen asiakastiedon hyödyntämiseen liittyvät tietosuojaa koskevat lait ja ohjeet ja osaan toimia niiden mukaan.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnistan asiakastiedon tietosuojakysymyksiin liittyvät riskit ja osaan ehkäistä riskien toteutumista.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan soveltaa asiakastiedon tietosuojaa koskevia ohjeita eri tilanteissa.",
+          "value" : 5
+        },
+        "text" : "Asiakastietojen tietosuoja",
+        "type" : "radio"
+      },
+      "text" : "Markkinointi ja viestintä"
+    },
+    "category" : "ammatti",
+    "text" : "Markkinointi ja viestintä"
+  }, {
+    "ST01" : {
+      "SST01" : {
+        "option1" : {
+          "text" : "Osaan laatia juoksevan kirjanpidon, verotuksen ja tilinpäätöksen.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan analysoida ja kommunikoida taloudellisia tunnuslukuja sisäiselle tai ulkoiselle asiakkaalle.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Pystyn tuottamaan lisäarvoa numeroiden tulkinnan avulla sisäiselle tai ulkoiselle asiakkaalle",
+          "value" : 5
+        },
+        "text" : "Kirjanpito ja taloudelliset tunnusluvut",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "option1" : {
+          "text" : "Tunnen taloushallinnon lainsäädännön ja muut säädökset sekä päivitän tietojani tarpeen mukaan.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan varmistaa, että taloushallinto on järjestetty lainsäädännön mukaisesti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan neuvoa sisäistä tai ulkoista asiakasta talouteen liittyvissä juridisissa asioissa.",
+          "value" : 5
+        },
+        "text" : "Juridiikan osaaminen",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "option1" : {
+          "text" : "Osaan suomalaiseen taloushallintoon liittyvät verotuksen pääkohdat ja soveltamisalat.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Hallitsen myös erityiskysymyksiä, kuten arvonlisäveron, yhteisöhankinnan ja yhteisömyynnin sekä kansainvälistä verolainsäädäntöä työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan suunnitella yrityksen verotusta ja hallitsen verojen optimointiin liittyvät kysymykset.",
+          "value" : 5
+        },
+        "text" : "Verotus",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "option1" : {
+          "text" : "Osaan tuottaa tietoa sisäisten tai ulkoisten asiakkaiden päätöksentekoa varten.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan analysoida esimerkiksi myynnin ja kulujen maksuehtojen ja rahtien vaikutusta kannattavuuteen.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Pystyn osallistumaan liiketoiminnan uusien tuotteiden tai palvelujen kehittämiseen taloudellisesta näkökulmasta.",
+          "value" : 5
+        },
+        "text" : "Liiketoiminnan tukena toimiminen",
+        "type" : "radio"
+      },
+      "SST05" : {
+        "option1" : {
+          "text" : "Osaan selvittää sisäisen ja ulkoisen asiakkaan taloushallinnon ongelmatilanteita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan neuvoa asiakasta, kun säädökset tms. muuttuvat.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan ennakoida asiakkaan tarpeita ja tarjota ratkaisuja ennen kuin asiakas pyytää niitä.",
+          "value" : 5
+        },
+        "text" : "Asiakaspalvelu",
+        "type" : "radio"
+      },
+      "SST06" : {
+        "option1" : {
+          "text" : "Osaan käyttää nykyaikaisia kirjanpito- ja ERP-järjestelmiä, kun asetukset on tehty valmiiksi.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää järjestelmien lisäautomaatiota.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan ottaa käyttöön uuden järjestelmän ja toimia projektin vastuullisena asiantuntijana.",
+          "value" : 5
+        },
+        "text" : "Taloushallinnon järjestelmien käyttö",
+        "type" : "radio"
+      },
+      "SST07" : {
+        "option1" : {
+          "text" : "Osaan käyttää taulukkolaskentaohjelmaa ja hallitsen pivotin, kaavojen laadinnan ja grafiikat.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tehdä makroja sekä käyttää hakukaavoja ja muita taulukkolaskentajärjestelmän ominaisuuksia laajasti.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Pystyn automatisoimaan työtäni taulukkolaskentajärjestelmän avulla, esimerkiksi hyödyntämällä Visual Basic –koodausta.",
+          "value" : 5
+        },
+        "text" : "Taulukkolaskentaohjelmien käyttö",
+        "type" : "radio"
+      },
+      "SST08" : {
+        "option1" : {
+          "text" : "Tiedän tietokantojen perusperiaatteet ja liittymät työhöni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan käyttää tietokantaohjelmistoa työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan suunnitella taloushallinnon seurantaan ja suunnitteluun tarvittavien tietojen määritykset tietokantoihin.",
+          "value" : 5
+        },
+        "text" : "Tietokantaohjelmistojen osaaminen",
+        "type" : "radio"
+      },
+      "SST09" : {
+        "option1" : {
+          "text" : "Osaan ylläpitää ja muokata valmiita operatiivisia raportteja.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan rakentaa raportointiympäristöä ohjeiden avulla ja muodostaa tietokantayhteyksiä eri taloushallinnon ohjelmistoihin.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan rakentaa raportointiympäristöä itsenäisesti ja hyödyntää Business Intelligence -raportointia.",
+          "value" : 5
+        },
+        "text" : "Raportointiosaaminen",
+        "type" : "radio"
+      },
+      "SST10" : {
+        "option1" : {
+          "text" : "Tiedän miten softarobotit liittyvät työhöni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan ottaa käyttöön softarobotin omassa työssäni.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan asiantuntijana osallistua softarobottien kehittämiseen. ",
+          "value" : 5
+        },
+        "text" : "Robotiikan hyödyntäminen",
+        "type" : "radio"
+      },
+      "SST11" : {
+        "option1" : {
+          "text" : "Osaan tuottaa tilinpäätösanalyysiin perustuvat rahoituksen tunnusluvut.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan arvioida tunnuslukujen perustella yrityksen rahoituksellista tilaa ja mahdollista kehityssuuntaa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan analysoida kokonaisvaltaisesti yrityksen rahoituksellista tilaa ja suositella toimenpiteitä.",
+          "value" : 5
+        },
+        "text" : "Rahoituksen analysointi",
+        "type" : "radio"
+      },
+      "SST12" : {
+        "option1" : {
+          "text" : "Osaan rahoituslaskelman ja kassabudjetin laatimisen periaatteet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan laatia lisätietojen avulla rahoituslaskelmamuotoisen pitkän aikavälin rahoitusbudjetin ja lyhyen aikavälin tuloslaskelman.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan tuottaa pitkän aikavälin budjetoinnin ja kassabudjetoinnin proaktiivisesti liukuvan budjetoinnin periaatteella.",
+          "value" : 5
+        },
+        "text" : "Rahoituksen suunnittelu",
+        "type" : "radio"
+      },
+      "SST13" : {
+        "option1" : {
+          "text" : "Tiedän rahoituksen oman pääoman perusvaihtoehdot ja osaan laskea oman pääoman kustannukset.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan analysoida oman pääoman kustannukset osana yrityksen arvonmääritystä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan arvioida oman pääoman rahoitusta osana yrityksen omistusjärjestelyitä.  ",
+          "value" : 5
+        },
+        "text" : "Oman pääoman rahoitus",
+        "type" : "radio"
+      },
+      "SST14" : {
+        "option1" : {
+          "text" : "Tiedän vieraan pääoman rahoituksen perusvaihtoehdot ja osaan laskea vieraan pääoman kustannukset.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan arvioida yrityksen luottokelpoisuutta ja arvioida luotonhallinnan riskejä eri sidosryhmien näkökulmasta.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan arvioida vieraan pääoman rahoitusta vaihtoehtona yrityksen kokonaisrahoituksessa.",
+          "value" : 5
+        },
+        "text" : "Vieraan pääoman rahoitus",
+        "type" : "radio"
+      },
+      "SST15" : {
+        "option1" : {
+          "text" : "Tiedän miten oman ja vieraan pääoman suhde vaikutta yrityksen rahoitukseen ja pääomarakenteeseen.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan määrittää pääomakustannukset ja analysoida pääomarakenteen merkitystä investointien kannattavuudelle.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan arvioida velkaantumisen vaikutusta yrityksen arvoon ja tunnistaa, milloin yrityksen kannattaa velkaantua.",
+          "value" : 5
+        },
+        "text" : "Rahoitusrakenne",
+        "type" : "radio"
+      },
+      "SST16" : {
+        "option1" : {
+          "text" : "Tiedän keskeiset investointilaskentamenetelmät ja osaan analysoida investoinnin kannattavuutta laskelman perusteella.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan määrittää investoinnin kannattavuutta erilaisin menetelmin.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan simuloida investointilaskelmia eri riskitasoilla ja ympäristömuuttujilla.",
+          "value" : 5
+        },
+        "text" : "Investointilaskelmat",
+        "type" : "radio"
+      },
+      "SST17" : {
+        "option1" : {
+          "text" : "Tiedän julkisen rahoituksen lähteet ja tarjoajat sekä näiden rahoitustarjonnan.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan arvioida yrityksen mahdollisuuksia julkisen rahoituksen saamiseksi ja tiedän rahoituksen hakemiseen liittyvät menettelyt.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan julkisen rahoituksen hakemisen käytänteet ja hakea julkista rahoitusta yritykselle.",
+          "value" : 5
+        },
+        "text" : "Julkinen rahoitus",
+        "type" : "radio"
+      },
+      "SST18" : {
+        "option1" : {
+          "text" : "Tunnen yrityksen arvonmäärityksen perusmenetelmät",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan määritellä yrityksen arvon.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan arvioida esimerkiksi tuoton ja riskin vaikutuksia yrityksen arvonmääritykseen eri riskitasoilla.",
+          "value" : 5
+        },
+        "text" : "Yrityksen arvonmääritys",
+        "type" : "radio"
+      },
+      "text" : "Taloushallinto"
+    },
+    "category" : "ammatti",
+    "text" : "Taloushallinto"
+  }, "topics", {
+    "ST01" : {
+      "SST01" : {
+        "option1" : {
+          "text" : "Tunnen strategisen ajattelun peruskäsitteistön sekä joitakin strategiatyön työkaluja ja malleja.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnen strategisen ajattelun käsitteistön ja keskeiset työkalut ja mallit strategiseen suunnitteluun ja strategian käytäntöön panoon liittyen. Pystyn hyödyntämään teoreettisia käsitteitä ja malleja käytännössä",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Tunnen erilaisia strategisia lähestymistapoja ja osaan vertailla strategisen johtamisen malleja, teorioita ja näkökulmia. Pystyn osallistumaan aktiivisesti strategiseen suunnitteluun ja toteutukseen hyödyntäen monipuolisesti erilaisia strategiatyön käytänteitä.",
+          "value" : 5
+        },
+        "text" : "Strateginen ajattelu ja strategiatyö",
+        "type" : "radio"
+      },
+      "SST02" : {
+        "option1" : {
+          "text" : "Tunnen keskeisiä liiketoimintamalleja ja ymmärrän erilaisia ansaintalogiikoita.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan arvioida ja vertailla erilaisia liiketoimintamalleja sekä kehittää liiketoimintaa huomioiden liiketoimintamalliin vaikuttavia eri tekijöitä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Pystyn kehittämään liiketoimintamalleja osana strategiatyötä hyödyntäen uusinta tietoa ja teknologiaa.",
+          "value" : 5
+        },
+        "text" : "Liiketoimintamallit",
+        "type" : "radio"
+      },
+      "SST03" : {
+        "option1" : {
+          "text" : "Ymmärrän digitalisaation merkityksen liiketoiminnan kehittämisessä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää liiketoiminnan joitakin osa-alueita digitalisaation mahdollisuuksia hyödyntäen.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Pystyn edistämään liiketoiminnan strategista kilpailukykyä digitalisaation avulla.",
+          "value" : 5
+        },
+        "text" : "Digitaalinen liiketoiminta",
+        "type" : "radio"
+      },
+      "SST04" : {
+        "option1" : {
+          "text" : "Tunnen ennakoinnin, tulevaisuuden tutkimuksen ja toimintaympäristön analysoinnin peruskäsitteet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää joitakin ennakoinnin ja toimintaympäristön analysointiin liittyviä työkaluja toiminnan kehittämisessä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää monipuolisesti erilaisia ennakoinnin ja toimintaympäristön analysointiin liittyviä malleja ja työkaluja liiketoiminnan strategisessa suunnittelussa ja kehittämisessä.",
+          "value" : 5
+        },
+        "text" : "Ennakointi ja toimintaympäristön analysointi",
+        "type" : "radio"
+      },
+      "SST05" : {
+        "option1" : {
+          "text" : "Tunnen alan keskeiset toimijat ja osaan arvioida näiden toimijoiden kilpailukykyä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia kilpailijatietoa ja hyödyntää sitä liiketoiminnan kehittämisessä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää ja hyödyntää erilaisia menetelmiä kilpailijaymmärryksen lisäämiseksi liiketoiminnan kehittämisessä.",
+          "value" : 5
+        },
+        "text" : "Kilpailijoiden analysointi",
+        "type" : "radio"
+      },
+      "SST06" : {
+        "option1" : {
+          "text" : "Osaan käyttää olemassa olevaa markkinatietoa omassa työssäni.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia, jalostaa ja jakaa markkinatietoa organisaatiossamme.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää data-analytiikkaa markkinatiedon analysoinnissa sekä käyttää analytiikkaa monipuolisesti liiketoiminnan kehittämisessä.",
+          "value" : 5
+        },
+        "text" : "Markkinoiden analysointi",
+        "type" : "radio"
+      },
+      "SST07" : {
+        "option1" : {
+          "text" : "Tunnen asiakasymmärryksen peruskäsitteet ja keskeiset työkalut ja mallit.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia asiakasymmärrystä liiketoiminnan suunnittelun ja kehittämisen perustaksi.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan laatia data-analyysiin perustuvia konkreettisia asiakaspersoonakuvauksia ja hyödyntää niitä tuloksellisesti liiketoiminnan kehittämisessä.",
+          "value" : 5
+        },
+        "text" : "Asiakasymmärrys",
+        "type" : "radio"
+      },
+      "SST08" : {
+        "option1" : {
+          "text" : "Tunnen muutoksen johtamisen peruskäsitteistön sekä menettelytapoja.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan valita erilaisiin muutostilanteisiin sopivia toimintamalleja ja työkaluja sekä tehdä muutoksen toteutussuunnitelman.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan vertailla ja hyödyntää erilaisia muutoksen johtamisen lähestymistapoja, työkaluja ja malleja. Osaan valita muutostavoitteita vastaavat toteutusmallit sekä suunnitella, johtaa ja toteuttaa muutoshankkeita.",
+          "value" : 5
+        },
+        "text" : "Muutoksen johtaminen",
+        "type" : "radio"
+      },
+      "SST09" : {
+        "option1" : {
+          "text" : "Tunnen kehitystyön peruskäsitteet ja joitakin kehitystyön malleja ja menetelmiä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tunnistaa kehittämiskohteita organisaatiossa, toimialalla ja toimintaympäristössä sekä suunnitella kehityshankkeita.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan vertailla ja hyödyntää erilaisia kehitystyön lähestymistapoja, työkaluja ja malleja. Osaan valita kehitystavoitteita vastaavat toteutusmallit sekä suunnitella, johtaa ja toteuttaa liiketoiminnan kehityshankkeita.",
+          "value" : 5
+        },
+        "text" : "Kehitystyö",
+        "type" : "radio"
+      },
+      "SST10" : {
+        "option1" : {
+          "text" : "Tunnen innovaatiomenetelmiä ja ymmärrän innovaatiotoiminnan merkityksen liiketoiminnan ytimessä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan valita liiketoiminnan kehittämisen eri tarpeisiin sopivia innovointimenetelmiä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan johtaa ja kehittää innovoinnin prosesseja jatkuvassa vuorovaikutuksessa asiakkaan kanssa.",
+          "value" : 5
+        },
+        "text" : "Innovointi ja luova prosessi",
+        "type" : "radio"
+      },
+      "SST11" : {
+        "option1" : {
+          "text" : "Tunnen prosessijohtamisen ja prosessien kehittämisen keskeiset mallit ja työkalut.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Pystyn tunnistamaan, suunnittelemaan, kuvaamaan ja kehittämään joitakin prosesseja.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää monipuolisesti erilaisia prosessien kehittämisen malleja ja työkaluja liiketoiminnan kilpailukyvyn edistämiseksi. Kykenen johtamaan prosessien kehittämisen hankkeita.",
+          "value" : 5
+        },
+        "text" : "Prosessien kehittäminen",
+        "type" : "radio"
+      },
+      "SST12" : {
+        "option1" : {
+          "text" : "Tunnen projektityön sekä projektien johtamisen keskeiset mallit ja työkalut.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan arvioida erilaisia projektihallinnan menetelmiä ja valita niistä soveltuvimmat kullekin projektille. Kykenen toimimaan aktiivisesti projekteissa ja myös vetämään projekteja.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan suunnitella ja toteuttaa liiketoiminnan tavoitteita tukevia kehitysprojekteja. Pystyn johtamaan monimuotoisia, organisaation eri osia ja sidosryhmiä koskevia liiketoiminnan kehitysprojekteja tuloksellisesti.",
+          "value" : 5
+        },
+        "text" : "Projektijohtaminen",
+        "type" : "radio"
+      },
+      "SST13" : {
+        "option1" : {
+          "text" : "Osaan hyödyntää uusia teknologioita, alustoja ja työkaluja kehitystyössä.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää uusien teknologioiden hyödynnettävyyttä ja käytettävyyttä yhteistyössä eri alojen osaajien kanssa.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Kokeilen ja kehitän jatkuvasti uusia tapoja hyödyntää kehittyviä teknologioita liiketoiminnan kehittämiseksi.",
+          "value" : 5
+        },
+        "text" : "Kehittyvät teknologiat ",
+        "type" : "radio"
+      },
+      "SST14" : {
+        "option1" : {
+          "text" : "Ymmärrän tekoälyn ja koneoppimisen peruslogiikan.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Tunnistan tekoälyn ja koneoppimisen mahdollisuuksia analytiikan ja strategisen kehittämisen tukena.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan hyödyntää tekoälyn ja koneoppimisen mahdollisuuksia analytiikan ja strategisen kehittämisen apuna.",
+          "value" : 5
+        },
+        "text" : "Tekoäly ja koneoppiminen",
+        "type" : "radio"
+      },
+      "SST15" : {
+        "option1" : {
+          "text" : "Tunnen erilaisia verkostoitumismuotoja ja ymmärrän verkostojen merkityksen liiketoiminnassa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan tunnistaa ja kehittää verkostoja joillakin liiketoiminnan osa-alueilla.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan luoda, kehittää ja johtaa verkostoja liiketoiminnan strategisen kilpailukyvyn edistämiseksi. Pystyn hyödyntämään tarvittaessa myös uusia verkostoitumisen muotoja, kuten alustataloutta.",
+          "value" : 5
+        },
+        "text" : "Verkostojen johtaminen ja kehittäminen",
+        "type" : "radio"
+      },
+      "SST16" : {
+        "option1" : {
+          "text" : "Tiedän, minkälaisia liiketoiminnan kehittämisen asiantuntijapalveluita on saatavilla.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hankkia asiantuntijapalveluita liiketoiminnan kehittämisen tarpeisiin.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan yhdistellä asiantuntijapalveluita monipuolisesti ja hankkia niitä yrityksen tarpeisiin kilpailuetua tuottavalla tavalla.",
+          "value" : 5
+        },
+        "text" : "Asiantuntijapalveluiden hyödyntäminen",
+        "type" : "radio"
+      },
+      "SST17" : {
+        "option1" : {
+          "text" : "Ymmärrän ihmisten johtamisen merkityksen liiketoiminnan menestyksen kannalta.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan suunnitella ja toteuttaa liiketoiminnan kehittämistä hyödyntäen organisaation monimuotoista osaamista.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan johtaa henkilöstöä ja kehittää liiketoimintaa yhteisiä arvoja ja strategiaa edistävällä tavalla. Kehitän liiketoiminnan kilpailukykyä organisaation osaamista, yhteisöllisyyttä ja sitoutumista edistävällä johtamisella.",
+          "value" : 5
+        },
+        "text" : "Ihmisten johtaminen",
+        "type" : "radio"
+      },
+      "SST18" : {
+        "option1" : {
+          "text" : "Ymmärrän liiketoiminnan tunnuslukuja ja mittareita sekä osaan niiden perusteella analysoida liiketoiminnan tilannetta.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan kehittää liiketoiminnan suorituskykyä joillakin toiminnan osa-alueilla sekä kehittää näille osa-alueille tarkoituksenmukaisia suorituksen mittauksen käytäntöjä.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Osaan kehittää ja johtaa strategista suorituskykyä. Osaan suunnitella ja toteuttaa suorituskyvyn johtamisen prosesseja ja mittareita.",
+          "value" : 5
+        },
+        "text" : "Suorituskyvyn johtaminen",
+        "type" : "radio"
+      },
+      "SST19" : {
+        "option1" : {
+          "text" : "Ymmärrän viestinnän ja vuorovaikutuksen merkityksen liiketoiminnassa ja sen johtamisessa.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan hyödyntää viestinnän kanavia ja toimintatapoja liiketoiminnan kehittämisessä. Edistän omalla vuorovaikutustavallani kehitystavoitteiden toteutumista.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Hyödynnän monipuolisesti viestintää sekä sitouttamisen, motivoimisen ja valmentamisen tapoja strategisessa liiketoiminnan kehittämisessä ja muutoksen johtamisessa. Kykenen toimimaan haastavissakin vuorovaikutustilanteissa tuloksellisella, rakentavalla ja kaikki osapuolet huomioivalla tavalla.",
+          "value" : 5
+        },
+        "text" : "Viestintä ja vuorovaikutus",
+        "type" : "radio"
+      },
+      "SST20" : {
+        "option1" : {
+          "text" : "Ymmärrän vastuullisen liiketoiminnan periaatteet.",
+          "value" : 1
+        },
+        "option3" : {
+          "text" : "Osaan analysoida liiketoimintaa vastuullisuuden näkökulmasta ja kehittää liiketoiminnan vastuullisuutta.",
+          "value" : 3
+        },
+        "option5" : {
+          "text" : "Pystyn edistämään yrityksen kilpailukykyä kehittämällä vastuullisuutta liiketoiminnan eri osa-alueissa.",
+          "value" : 5
+        },
+        "text" : "Vastuullisuus",
+        "type" : "radio"
+      }
+    },
+    "category" : "ammatti",
+    "text" : "Liiketoiminnan kehittäminen"
+  } ]
+}

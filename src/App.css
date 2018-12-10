@@ -1,28 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet');
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet');
+}
+/* YLEINEN FONTTI */
+.body, div {
+  font-family: 'Roboto', sans-serif;
+}
 .App {
-  text-align: center;
-}
+    text-align: center;
+    min-height: 800px;
+    background-image: url("./img/PNG/raita.png");
+    background-repeat: repeat-y;
+    background-position: 93% 50%;
+  }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  .App-title {
+    font-size: 1.5em;
+  }
+  .App-intro {
+    font-size: large;
+  }
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .text {
+    color: #3C3C3C;
+  }
+  /*ALOITA KYSELY -nappula*/
+ .buttonBegin {
+    background-color: #E6007E;
+    border: none;
+    color: white;
+    padding: 10px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px 3px;
+  }
+   /*JATKA-nappula*/
+  .buttonForward {
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 5%;
+    margin-top: 10px;
+    background-color: #E6007E;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px 3px;
+  }
+  /*TAKAISIN-nappula*/
+  .buttonBackward {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 5%;
+    margin-top: 10px;
+    background-color: #E6007E;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px 3px;
+  }
+   /*ASIANTUNTIJAN OSAAMINEN -intron tekstit*/
+  .professionSelectionText {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+  /*ASIANTUNTIJAN OSAAMINEN -intron checkbox*/
+  .professionSelectionCheckbox {
+    text-align: left;
+    margin-left: 70px;
+    margin-bottom: 40px;
+  }
 
-.App-title {
-  font-size: 1.5em;
-}
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
 
-.App-intro {
-  font-size: large;
-}
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /*KYSELYN container*/
+  .surveyContainer {
+    align-items: left;
+    display: block;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #DADADA;
+    margin: 0% 15% 0% 15%;
+    padding-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 4em;
+  }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Luo validointi-merkin checkboxiin*/
+  .topicItemOptions input:invalid:focus ~ .checkmark {
+    outline: 2px solid red;
+
+  }
+
+  /**/
+  .barContainer {
+      align-items: left;
+      display: block;
+      flex-direction: column;
+      border-top-style: solid;
+      border-left-style: solid;
+      border-right-style: solid;
+      border-width: 0.5px;
+      border-color: #DADADA;
+      margin: 0 15% 0 15%;
+      background-color: white;
+      border-radius: 5px 5px 0px 0px;
+  }
+  /*Kategorian otsikko*/
+  .topicContainer h2 {
+    background-color: #009FE3;
+    width: 100% !important;
+    padding: 0.3%;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .Notification {
+    margin-left: 15em;
+    margin-right: 15em;
+    border-style:double;
+    border-width: 5px;
+    border-color: pink;
 }
+  /*Kategorian alaotsikko ja vastausvaihtoehdot*/
+  .topicItemContainer {
+    margin-top: 17px;
+    background-color: rgba(255, 255, 255, 0);
+   /* border-bottom: solid; */
+    border-width: 0.5px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: rgb(96,96,96, 0.719);
+  }
+  /*Kategorian alaotsikon teksti*/
+  .topicItemHeader {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 130%;
+    }
+  /*Piilottaa koontipalautteen charteista Jatka ja Takaisin -nappulat*/
+.summaryPageCharts button {
+  display: none;
+}
+  /*Vastausvaihtoehtojen radio ja checkbox-tyylit*/
+  .topicItemOptions {
+    text-align: left;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .topicItemOptions input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .topicItemOptions:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  /* When the checkbox is checked, add a blue background */
+  .topicItemOptions input:checked ~ .checkmark {
+    background-color: #E6007E;
+  }
+  /*Ammattikyselyn radiot*/
+  .profOptionsRadio{
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-weight: normal;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+  #cursor-hover {  /* MUUTTAA KURSORIN KUN HOVEROI JATKA-NAPIN YLLE */
+    cursor: pointer;
+  }
+  .barChartContainer {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviewtextH3 {
+    font-size: 16px;
+  }
+
+  .instructionHeader {
+    padding: 2em 2em 1em 2em;
+    text-align: center;
+  }
+
+  .radarChartContainer {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #radarChart {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .barCanvas {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .progress-bar {
+    height: 15px;
+    width: 500px;
+    border-radius: 40px;
+    border: 0.7px solid #3C3C3C;
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+  }
+  .filler {
+    background: rgb(0, 159, 227);
+    height: 100%;
+    border-radius: inherit;
+    transition: width .2s ease-in;
+  }
+  .bar {
+    padding: 5px 0 5px 0;
+  }
+  .bar img {
+    max-height: 150px;
+    width: 80%;
+    max-width: 800px;
+  }
+  .header-logo {
+    margin: 10px 0 0 33px;
+    display: flex;
+    max-height: 53px;
+    max-width: 160px;
+    width: 20%;
+  }
+  h1 {
+    color: #E6007E;
+    font-size: 300%;
+    font-weight: bolder;
+  }
+  h3 {
+    color: #3C3C3C;
+    font-size: 150%;
+    font-weight:bold;
+  }
+  p {
+    color: #3C3C3C;
+  }
+  .welcomePageText {
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    margin-right: 10%;
+  }
+  .improvText {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+  }
+  .welcomePageTextDiv  {
+    display:flex;
+    flex-direction: row;
+  }
+  .palkki {
+    margin: 4px;
+  }
+  .palaute {
+    display: block;
+    text-align: left;
+    margin-left: 4em;
+  }
+  .reviewtext {
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+  }
+  img {
+    padding-right: 10px
+  }
+  .footer {
+    width: 100%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 0.5px;
+    border-color: #DADADA;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .phantom {
+    display: block;
+    padding: 20px;
+    height: 5em;
+    width: 100%;
+  }
+
+  .footerImgDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 33px 20px 33px;
+  }
+  .hhlogo {
+    align-self: flex-end;
+    width: 20%;
+  }
+  .stnlogo {
+    align-self: flex-end;
+    width: 20%;
+  }
+  .footer-img-hh {
+    max-height:48px;
+    width: 100%;
+    max-width: 155.45px;
+    min-width : 100px;
+  }
+  .footer-img-stn {
+    max-height:48px;
+    width: 100%;
+    max-width: 217.183px;
+    min-width: 100px;
+  }
+  .social-links {
+    margin:auto;
+  }
+  .summaryPrint {
+    display: inline-flex;
+    margin-bottom: 60px;
+  }
+  .adminList {
+    display: block;
+  }
+  .adminTable {
+    display: inline-block;
+    align-content: center;
+    margin: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .adminTable td, .adminTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .adminTable tr:nth-child(even){background-color: #f2f2f2;}
+  .adminTable tr:hover {background-color: #ddd;}
+
+  /*tulostus asettelut tähän*/
+  @media print {
+    a[href]:after {
+      content: none;
+    }
+
+    .barContainer {
+      display: none;
+    }
+
+    .summaryPrint {
+      display: none;
+    }
+
+    .barChartContainer {
+      text-align: center;
+      width: 50%;
+      margin-right: 80%;
+    }
+
+    .barCanvas {
+      width: 50%;
+    }
+
+    .radarChartContainer {
+      text-align: center;
+      margin-right: 25%;
+    }
+
+    .surveyContainer {
+      text-align: center;
+      width: 100%;
+      margin-left: 0%;
+    }
+
+    .reviewtext {
+      text-align: left;
+    }
+    .footer {
+      display: none
+    }
+  }
+  @media only screen and (max-width: 685px){
+    h1 {
+      color: #E6007E;
+      font-size: 150%;
+      font-weight: bolder;
+    }
+    h3 {
+      color: #3C3C3C;
+      font-size: 100%;
+      font-weight:bold;
+    }
+    .social-links{
+      display: none;
+    }
+
+  }
+  @media only  screen and (max-width:320px){
+    h1 {
+      color: #E6007E;
+      font-size: 150%;
+      font-weight: bolder;
+    }
+    h3 {
+      color: #3C3C3C;
+      font-size: 100%;
+      font-weight:bold;
+    }
+    .social-links{
+      display: none;
+    }
+    #radarChart{
+      display: none;
+    }
+    .barCanvas{
+      display: none;
+    }
+
+  }
