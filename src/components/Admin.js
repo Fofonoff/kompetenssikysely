@@ -3,7 +3,11 @@ import topicService from '../services/topics';
 import axios from 'axios'
 import AdminList from './AdminList';
 import fire from '../fire';
-import Notification from './Notification'
+import Notification from './Notification';
+import { Redirect } from 'react-router';
+import allowedUidsService from '../services/allowedUids';
+import firebase from 'firebase';
+
 
 class Admin extends Component {
     constructor(props){
@@ -20,12 +24,20 @@ class Admin extends Component {
             quesnmb: "",
             topicnmb: "",
             message: null,
-            selectedProf: ''
+            selectedProf: '',
+            allowedUids: undefined,
         }
     }
 
 async componentDidMount() {
     this.setState({topics : await topicService.getAll()});
+    this.getAllowedUids().then(result => this.setState({
+        allowedUids: result
+    }));
+}
+
+getAllowedUids() {
+    return allowedUidsService.getAll();
 }
 
 uusAmmatti = (event) => {
@@ -223,44 +235,66 @@ newQuestiontoDB = async (event) => {
     }, 5000)
 }
 
+checkIfAdmin(admin, currentUser) {
+    if (admin.toString() === currentUser.toString()) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
     render() {
-      const topicsToShow = this.state.topics.filter(t => typeof t === 'object')
-        return (
-            <div className="surveyContainer">
-
-                <h1>AdminTyökalu</h1>
-            <div>
-                <form className="adminForm">
-                    <h3>Lisää uusi kompetenssi tästä</h3>
-                    <label>Kompetenssi: </label>
-                    <input type="text" id="ammattiRyhma" value={this.state.newProf} onChange={this.uusAmmatti}></input>
-
-                <input type="submit" onClick={this.newProfToDB} value="Lähetä Kompetenssi"/>
-                </form>
-                {!this.state.message ? null : <div className="Notification">
-                  <Notification message={this.state.message}/>
-                  </div>}
-            </div>
-            <div>
-                <table className="adminTable">
-                   <AdminList topics={topicsToShow} changeValue={this.changeValue} click={this.click} saveChanges={this.saveChanges}
-                   showQuestions={this.showQuestions} questions={this.state.questions} deleteProf={this.deleteProf}
-                   editQuestions={this.editQuestions} deleteQuestion={this.deleteQuestion} selectedProf={this.state.selectedProf}/>
-               </table>
-               <form className="adminForm">
-                   <h3>Lisää uusi kysymys {this.state.selectedProf} kompetenssiin tästä</h3>
-                   <label>Kysymys: </label> <input type="text" name="text" onChange={this.inputChanged} value={this.state.text} placeholder="Tähän siis kyssäri"></input> <br></br>
-                   <label>Vastausvaihtoehto 1: </label>
-                   <input type="text" name="option1" onChange={this.inputChanged} value={this.state.option1} placeholder="Tähän vaihtoehto 1."></input><br></br>
-                   <label>Vastausvaihtoehto 3: </label>
-                   <input type="text" name="option3" onChange={this.inputChanged} value={this.state.option3} placeholder="Tähän vaihtoehto 3."></input><br></br>
-                   <label>Vastausvaihtoehto 5: </label>
-                   <input type="text" name="option5" onChange={this.inputChanged} value={this.state.option5} placeholder="Tähän vaihtoehto 5."></input><br></br>
-                   <button type="submit" onClick={this.newQuestiontoDB}>Lähetä Kyssäri</button>
-               </form>
-            </div>
-            </div>
-        )
+      let currentUser = firebase.auth().currentUser.uid;
+      const topicsToShow = this.state.topics.filter(t => typeof t === 'object');
+        if (this.state.allowedUids === undefined) {
+            return <div>Loading...</div>
+        }
+        else if (this.checkIfAdmin(this.state.allowedUids, currentUser) === true) {
+            return (
+                <div className="surveyContainer">
+    
+                    <h1>AdminTyökalu</h1>
+                <div>
+                    <form className="adminForm">
+                        <h3>Lisää uusi kompetenssi tästä</h3>
+                        <label>Kompetenssi: </label>
+                        <input type="text" id="ammattiRyhma" value={this.state.newProf} onChange={this.uusAmmatti}></input>
+    
+                    <input type="submit" onClick={this.newProfToDB} value="Lähetä Kompetenssi"/>
+                    </form>
+                    {!this.state.message ? null : <div className="Notification">
+                      <Notification message={this.state.message}/>
+                      </div>}
+                </div>
+                <div>
+                    <table className="adminTable">
+                       <AdminList topics={topicsToShow} changeValue={this.changeValue} click={this.click} saveChanges={this.saveChanges}
+                       showQuestions={this.showQuestions} questions={this.state.questions} deleteProf={this.deleteProf}
+                       editQuestions={this.editQuestions} deleteQuestion={this.deleteQuestion} selectedProf={this.state.selectedProf}/>
+                   </table>
+                   <form className="adminForm">
+                       <h3>Lisää uusi kysymys {this.state.selectedProf} kompetenssiin tästä</h3>
+                       <label>Kysymys: </label> <input type="text" name="text" onChange={this.inputChanged} value={this.state.text} placeholder="Tähän siis kyssäri"></input> <br></br>
+                       <label>Vastausvaihtoehto 1: </label>
+                       <input type="text" name="option1" onChange={this.inputChanged} value={this.state.option1} placeholder="Tähän vaihtoehto 1."></input><br></br>
+                       <label>Vastausvaihtoehto 3: </label>
+                       <input type="text" name="option3" onChange={this.inputChanged} value={this.state.option3} placeholder="Tähän vaihtoehto 3."></input><br></br>
+                       <label>Vastausvaihtoehto 5: </label>
+                       <input type="text" name="option5" onChange={this.inputChanged} value={this.state.option5} placeholder="Tähän vaihtoehto 5."></input><br></br>
+                       <button type="submit" onClick={this.newQuestiontoDB}>Lähetä Kyssäri</button>
+                   </form>
+                </div>
+                </div>
+            )
+        }
+        else {
+            return(
+                <Redirect to={{
+                    pathname: '/login',
+                }} />
+            )
+        }
     }
 }
 
