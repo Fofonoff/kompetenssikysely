@@ -242,8 +242,13 @@
     margin-right: auto;
   }
 
-  .reviewtextH3{
+  .reviewtextH3 {
     font-size: 16px;
+  }
+
+  .instructionHeader {
+    padding: 2em 2em 1em 2em;
+    text-align: center;
   }
 
   .radarChartContainer {
@@ -282,7 +287,8 @@
   }
   .bar img {
     max-height: 150px;
-    width: 90%;
+    width: 80%;
+    max-width: 800px;
   }
   .header-logo {
     margin: 10px 0 0 33px;
@@ -326,6 +332,7 @@
   .palaute {
     display: block;
     text-align: left;
+    margin-left: 4em;
   }
   .reviewtext {
     margin-left: 15%;

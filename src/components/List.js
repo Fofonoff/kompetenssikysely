@@ -6,6 +6,7 @@ const List = ({ topics, changeOption, sendAnswers, move, getChecked }) => {
   return (
     <div>
       <div className="surveyContainer">
+        <div className="instructionHeader">	<h5>Valitse seuraavissa YKSI PARHAITEN osaamistasi kuvaava taso: 1 = perustaso, 3 = hyvä taso tai 5 = erinomainen taso.</h5></div>
         <form onSubmit={sendAnswers}>
           {topics.map((topic, i) =>
             <Topic key={i} topic={topic} changeOption={changeOption} get={getChecked}></Topic>)}

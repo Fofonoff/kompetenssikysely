@@ -22,6 +22,7 @@ class App extends React.Component {
             topics: [],
             genTopics: [],
             genGenTopics: [],
+            bgInf: '',
             profTopics: [],
             feedback: [],
             answers: [],
@@ -56,8 +57,9 @@ class App extends React.Component {
         const genTopics = Object.values(filterGeneral[0]).map(t => t).filter(t => typeof t === 'object' && t.text !== 'Vastaajan taustatiedot')
         const genGenTopics = Object.values(filterGeneral[0]).map(t => t).filter(t => typeof t === 'object' && t.text === 'Vastaajan taustatiedot')
         const profTopics = topics.filter(t => typeof t === 'object')
+        const bgInf = genGenTopics[0].text;
 
-        this.setState({ professionAnswers, genTopics, genGenTopics, profTopics, topics, feedback: await feedbackService.getAll() })
+        this.setState({ professionAnswers, genTopics, genGenTopics, profTopics, topics, bgInf, feedback: await feedbackService.getAll() })
     }
 
     changeOption = (event) => {
@@ -198,7 +200,7 @@ class App extends React.Component {
                 return (
                     <div className="App">
                         <Header surveyState={this.state.surveyState} states={this.state.states} />
-                        <GeneralList getChecked={this.getChecked} topics={this.state.genGenTopics} move={this.move} changeOption={this.changeOption} />
+                        <GeneralList getChecked={this.getChecked} topics={this.state.genGenTopics} move={this.move} changeOption={this.changeOption} bgInf={this.state.bgInf} />
                         <Footer />
                     </div>
                 )

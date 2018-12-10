@@ -11,8 +11,8 @@ const TopicItem = ({ topic, changeOption, parent, get }) => {
       <p className="topicItemHeader">{topic.text}</p>
       <fieldset>
         {optionValues.map((option, i) =>
-         <label className="topicItemOptions" key={i}><input type="radio" className="profOptionsRadio" name={questionName} data-parent={parent}
-         onChange={changeOption} data-aval={option.value} data-atext={option.text} data-acat={"ammatti"} checked={get(questionName, option.value, parent)} required /><span className="checkmark"></span>{option.text}</label>)}
+          <label className="topicItemOptions" key={i}><input type="radio" className="profOptionsRadio" name={questionName} data-parent={parent}
+            onChange={changeOption} data-aval={option.value} data-atext={option.text} data-acat={"ammatti"} checked={get(questionName, option.value, parent)} required /><span className="checkmark"></span>{option.value} {option.text}</label>)}
       </fieldset>
     </div>
   )
